@@ -11,16 +11,23 @@ const Navbar = ({ themeSwitcher }) => {
 		setOpen
 	] = useState(false);
 
+	const [
+		onPage,
+		setOnPage
+	] = useState(0);
+
 	const menuIcon = <FiMenu className={styles.menuBtn} onClick={() => setOpen(!open)} />;
 
 	const closeIcon = <RiCloseFill className={styles.menuBtn} onClick={() => setOpen(!open)} />;
+
+	const onPageCircle = <span className={styles.onPageCircle} />;
 
 	return (
 		<div className={styles.navbar}>
 			<ul>
 				<li className={styles.homeLink}>
 					<Link href="/">
-						<a>Ryland L. Oehlers</a>
+						<a onClick={() => setOnPage(0)}>Ryland L. Oehlers</a>
 					</Link>
 				</li>
 			</ul>
@@ -28,17 +35,26 @@ const Navbar = ({ themeSwitcher }) => {
 			<ul className={styles.pageLinks}>
 				<li>
 					<Link href="/about">
-						<a>About</a>
+						<a onClick={() => setOnPage(1)}>
+							{onPage === 1 ? onPageCircle : null}
+							About
+						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/projects">
-						<a>Projects</a>
+						<a onClick={() => setOnPage(2)}>
+							{onPage === 2 ? onPageCircle : null}
+							Projects
+						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/resume">
-						<a>Resume</a>
+						<a onClick={() => setOnPage(3)}>
+							{onPage === 3 ? onPageCircle : null}
+							Resume
+						</a>
 					</Link>
 				</li>
 			</ul>
@@ -51,7 +67,7 @@ const Navbar = ({ themeSwitcher }) => {
 				</div>
 			</ul>
 
-			{open ? <Sidebar open={open} /> : null}
+			{open ? <Sidebar open={open} setOpen={setOpen} /> : null}
 		</div>
 	);
 };

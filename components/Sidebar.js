@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/Sidebar.module.css';
 
-const Sidebar = ({ open }) => {
+const Sidebar = ({ open, setOpen }) => {
 	return (
 		<div className={styles.sidebar}>
 			<ul>
@@ -12,12 +12,12 @@ const Sidebar = ({ open }) => {
 				</li>
 				<li>
 					<Link href="/projects">
-						<a>Projects</a>
+						<a onClick={() => setOpen(!open)}>Projects</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/resume">
-						<a>Resume</a>
+						<a onClick={() => setOpen(!open)}>Resume</a>
 					</Link>
 				</li>
 			</ul>

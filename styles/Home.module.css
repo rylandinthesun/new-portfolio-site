@@ -132,8 +132,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-width: 2px;
+	border-width: 3px;
 	border-style: solid;
+	border-radius: 50px;
 	height: 40px;
 	font-family: 'Space Mono', monospace;
 	font-size: 1.1rem;

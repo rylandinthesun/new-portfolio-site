@@ -1,0 +1,75 @@
+.container {
+	padding: 2rem 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main {
+	width: 100%;
+	margin-top: 2rem;
+	padding: 0 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main h4 {
+	font-family: 'Montserrat', sans-serif;
+	width: 70%;
+	font-size: 3.5rem;
+	font-weight: 900;
+}
+
+.paragraph {
+	font-family: 'Space Mono', monospace;
+	width: 75%;
+	float: right;
+	text-align: right;
+	font-size: 1.2rem;
+	margin: 1rem 0 2rem 0;
+}
+
+.paragraphNext {
+	font-family: 'Space Mono', monospace;
+	width: 75%;
+	float: left;
+	text-align: left;
+	font-size: 1.2rem;
+	margin: 1rem 0 2rem 0;
+}
+
+@media only screen and (max-width: 865px) {
+	.main {
+		padding: 0 1rem;
+	}
+
+	.main h4 {
+		width: 80%;
+		font-size: 2.6rem;
+	}
+
+	.paragraph {
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	.paragraphNext {
+		width: 90%;
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.main h4 {
+		font-size: 2rem;
+	}
+
+	.paragraph {
+		font-size: 0.9rem;
+	}
+
+	.paragraphNext {
+		font-size: 0.9rem;
+	}
+}
