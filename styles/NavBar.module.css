@@ -91,7 +91,7 @@
 	.navbar {
 		background-color: #fff;
 		color: #000;
-		border-bottom-width: 1px;
+		border-bottom-width: 2px;
 		border-bottom-style: solid;
 		position: fixed;
 	}

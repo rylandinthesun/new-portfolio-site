@@ -38,10 +38,15 @@
 	justify-content: space-between;
 }
 
-.summary div {
+.summaryTitle {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
 }
 
 .summary h2 {
@@ -54,7 +59,6 @@
 .summary p {
 	width: 36rem;
 	font-family: 'Space Mono', monospace;
-	font-weight: 700;
 	font-size: 1.4rem;
 	text-align: right;
 	margin-top: 0;
@@ -72,6 +76,71 @@
 
 .socials a:hover {
 	color: #949494;
+}
+
+.familiar {
+	padding: 0 3rem;
+	margin-top: 1rem;
+	font-family: 'Space Mono', monospace;
+	font-size: 1rem;
+}
+
+.familiarWith {
+	border-color: #808080;
+}
+
+.familiarWith svg {
+	color: #808080;
+}
+
+.familiarWith span {
+	color: #808080;
+}
+
+.toolKit {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 5rem;
+	padding: 0 3rem;
+}
+
+.toolkitTitle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.toolKit h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 900;
+	margin: 0;
+}
+
+.tools {
+	width: 75%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	gap: 0.6rem;
+	row-gap: 0.5rem;
+	margin-right: 20px;
+	margin-top: 0.6rem;
+}
+
+.toolCard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-width: 2px;
+	border-style: solid;
+	height: 40px;
+	font-family: 'Space Mono', monospace;
+	font-size: 1.1rem;
+}
+
+.toolCard span {
+	margin-left: 5px;
 }
 
 @media only screen and (max-width: 865px) {
@@ -100,6 +169,31 @@
 		width: 25rem;
 		padding-left: 10px;
 	}
+
+	.familiar {
+		padding: 0 1rem;
+		font-size: 0.9rem;
+	}
+
+	.toolKit {
+		padding: 0 1rem;
+	}
+
+	.toolKit h2 {
+		font-size: 1.8rem;
+	}
+
+	.tools {
+		grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+	}
+
+	.toolCard {
+		font-size: 1.4rem;
+	}
+
+	.toolCard span {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -113,9 +207,13 @@
 		flex-direction: column;
 	}
 
-	.summary div {
+	.summaryTitle {
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	.content {
+		flex-direction: row;
 	}
 
 	.summary p {
@@ -125,6 +223,20 @@
 		margin-top: 1rem;
 	}
 
+	.familiar {
+		font-size: 0.8rem;
+	}
+
+	.toolKit {
+		flex-direction: column-reverse;
+	}
+
+	.toolkitTitle {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 	.socials {
 		display: flex;
 		flex-direction: column;
@@ -132,5 +244,19 @@
 		margin-top: 1.2rem;
 		margin-bottom: 0.4rem;
 		justify-content: space-between;
+	}
+
+	.tools {
+		grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+		margin-right: 0;
+		margin-top: 1.4rem;
+		width: 100%;
+		justify-content: space-evenly;
+		align-content: space-evenly;
+		align-items: center;
+	}
+
+	.toolCard span {
+		display: none;
 	}
 }
