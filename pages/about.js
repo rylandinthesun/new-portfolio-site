@@ -11,10 +11,10 @@ const About = () => {
 						...just like any other kid who loves music. Luckily for me, I had a local rockstar dad, who made
 						a decent career from playing music around the city of Toledo, OH, who always encouraged me to
 						play instruments and be musical. Little did I know, that eventually as a young adult, I would be
-						able to join a band, who took on the opportunity of being a professional full-time touring
-						musician, and play music around the world. For most musicians, that’s the peak career
-						accomplishment, touring and playing your own original music. It’s always something that I’ve
-						been truly grateful to ever experience and be a part of.
+						able to join a band, take on the opportunity of being a professional full-time touring musician,
+						and play music around the world. For most musicians, that’s the peak career accomplishment,
+						touring and playing your own original music. It’s always something that I’ve been truly grateful
+						to ever experience and be a part of.
 					</p>
 					<p className={styles.paragraphNext}>
 						Like most musicians and songwriters, I started using DAW (Digital Audio Workstation) software to

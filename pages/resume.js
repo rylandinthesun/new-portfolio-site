@@ -1,17 +1,21 @@
+import myResume from '../images/Ryland_Oehlers_Resume.jpg';
+import Image from 'next/image';
 import styles from '../styles/ResumePage.module.css';
-// import myResume from '../public/RylandOehlersResume.pdf';
 
 const Resume = () => {
 	return (
 		<div className={styles.container}>
 			<main className={styles.main}>
 				<a
-					href={`${process.env.PUBLIC_URL}/RylandOehlersResume.pdf`}
-					download="RylandOehlersResume.pdf"
-					title="Resume"
+					className={styles.pdfLink}
+					href="https://drive.google.com/file/d/1msk1l_0l58brFq_NNVUpwAEbLeOLNzlj/view?usp=sharing"
+					target="_blank"
+					rel="noopener noreferrer"
 				>
-					Click to download
+					Click to view as PDF
 				</a>
+
+				<Image className={styles.resumePhoto} src={myResume} alt="Photo of resume" width={800} height={1000} />
 			</main>
 		</div>
 	);

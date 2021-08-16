@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import selfPortrait from '../images/selfportrait.jpg';
 import { FiMail } from 'react-icons/fi';
 import {
@@ -26,11 +27,13 @@ import {
 	FaHtml5,
 	FaCss3Alt,
 	FaBootstrap,
-	FaGitAlt
+	FaGitAlt,
+	FaArrowRight
 } from 'react-icons/fa';
+import ProjectList from '../components/ProjectList';
 import styles from '../styles/Home.module.css';
 
-export default function Home () {
+export default function Home ({ projects }) {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -48,6 +51,7 @@ export default function Home () {
 					width={300}
 					height={400}
 					objectFit="cover"
+					priority
 				/>
 			</main>
 
@@ -188,6 +192,38 @@ export default function Home () {
 			</section>
 
 			<h6 className={styles.familiar}>GREY = FAMILIAR WITH</h6>
+
+			<section className={styles.projects}>
+				<div className={styles.projectsTitle}>
+					<h1>P</h1>
+					<h1>R</h1>
+					<h1>O</h1>
+					<h1>J</h1>
+					<h1>E</h1>
+					<h1>C</h1>
+					<h1>T</h1>
+					<h1>S</h1>
+				</div>
+				<div>
+					<ProjectList projects={projects.slice(0, 2)} />
+				</div>
+				<Link href="/projects">
+					<a className={styles.moreProjects}>
+						More Projects<span>
+							<FaArrowRight />
+						</span>
+					</a>
+				</Link>
+			</section>
 		</div>
 	);
 }
+
+export const getStaticProps = async () => {
+	const res = await fetch('http://localhost:3000/api/projects');
+	const data = await res.json();
+
+	return {
+		props : { projects: data }
+	};
+};

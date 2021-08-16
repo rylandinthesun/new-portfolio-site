@@ -132,9 +132,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-width: 3px;
+	border-width: 1px;
 	border-style: solid;
-	border-radius: 50px;
 	height: 40px;
 	font-family: 'Space Mono', monospace;
 	font-size: 1.1rem;
@@ -142,6 +141,44 @@
 
 .toolCard span {
 	margin-left: 5px;
+}
+
+.projects {
+	width: 100%;
+	padding: 0 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.projectsTitle {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 3rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.projectsTitle h1 {
+	font-weight: 900;
+}
+
+.moreProjects {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.moreProjects span {
+	margin-left: 6px;
+}
+
+.moreProjects:hover {
+	color: #949494;
 }
 
 @media only screen and (max-width: 865px) {
@@ -194,6 +231,18 @@
 
 	.toolCard span {
 		display: none;
+	}
+
+	.projects {
+		padding: 0 1rem;
+	}
+
+	.projectsTitle {
+		font-size: 2.2rem;
+	}
+
+	.moreProjects {
+		font-size: 1.1rem;
 	}
 }
 
@@ -259,5 +308,13 @@
 
 	.toolCard span {
 		display: none;
+	}
+
+	.projectsTitle {
+		font-size: 1.4rem;
+	}
+
+	.moreProjects {
+		font-size: 1rem;
 	}
 }

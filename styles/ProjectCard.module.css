@@ -1,0 +1,123 @@
+.card {
+	display: flex;
+	justify-content: space-between;
+	border-width: 4px;
+	border-style: solid;
+	padding: 1rem 1rem;
+	margin-bottom: 2rem;
+}
+
+.imgContainer {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.projectImg {
+	z-index: -1;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 50%;
+	padding: 0 1rem;
+}
+
+.titleLinks {
+	padding: 0;
+}
+
+.titleLinks h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 900;
+	margin: 0 0 0.8rem 0;
+}
+
+.links a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	padding: 6px 6px;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 50px;
+	margin-right: 0.4rem;
+	transition: 0.2s;
+}
+
+.links a:hover {
+	background-color: #949494;
+}
+
+.info p {
+	font-family: 'Space Mono', monospace;
+}
+
+.tech {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 865px) {
+	.titleLinks h4 {
+		font-size: 1.8rem;
+	}
+
+	.links a {
+		font-size: 0.8rem;
+	}
+
+	.info p {
+		font-size: 0.9rem;
+	}
+
+	.tech {
+		font-size: 0.7rem;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.card {
+		flex-direction: column;
+	}
+
+	.imgContainer {
+		width: 100%;
+	}
+
+	.info {
+		width: 100%;
+	}
+
+	.links {
+		margin-bottom: 1rem;
+	}
+
+	.info p {
+		margin-bottom: 1rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.titleLinks h4 {
+		font-size: 1.7rem;
+	}
+
+	.links a {
+		font-size: 0.7rem;
+	}
+
+	.info p {
+		font-size: 0.8rem;
+	}
+
+	.tech {
+		font-size: 0.6rem;
+	}
+}
