@@ -39,7 +39,7 @@ import styles from '../styles/Home.module.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const Home = ({ projects }) => {
+const Home = ({ projects }) => {
 	const h1Ref = useRef();
 	const summaryRef = useRef();
 	const toolKitRef = useRef();
@@ -303,6 +303,8 @@ export const Home = ({ projects }) => {
 		</div>
 	);
 };
+
+export default Home;
 
 export const getServerSideProps = async () => {
 	const res = await fetch('http://localhost:3000/api/projects');
