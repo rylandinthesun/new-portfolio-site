@@ -133,6 +133,7 @@ const Home = ({ projects }) => {
 			<Head>
 				<title>Ryland Oehlers Portfolio</title>
 				<meta name="description" content="Portfolio for Ryland Oehlers" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
