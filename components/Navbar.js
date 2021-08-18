@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
 import { RiCloseFill } from 'react-icons/ri';
-import styles from '../styles/NavBar.module.css';
 import Sidebar from './Sidebar';
+import { gsap } from 'gsap';
+import styles from '../styles/NavBar.module.css';
 
 const Navbar = ({ themeSwitcher }) => {
 	const [
@@ -22,10 +23,18 @@ const Navbar = ({ themeSwitcher }) => {
 
 	const onPageCircle = <span className={styles.onPageCircle} />;
 
+	const onEnter = ({ currentTarget }) => {
+		gsap.to(currentTarget, { scale: 1.05, duration: 0.2 });
+	};
+
+	const onLeave = ({ currentTarget }) => {
+		gsap.to(currentTarget, { scale: 1, duration: 0.2 });
+	};
+
 	return (
 		<div className={styles.navbar}>
 			<ul>
-				<li className={styles.homeLink}>
+				<li onMouseEnter={onEnter} onMouseLeave={onLeave} className={styles.homeLink}>
 					<Link href="/">
 						<a onClick={() => setOnPage(0)}>Ryland L. Oehlers</a>
 					</Link>

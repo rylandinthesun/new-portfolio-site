@@ -10,14 +10,13 @@
 		flex-direction: column;
 		border-left-width: 2px;
 		border-left-style: solid;
-		border-top-width: 2px;
-		border-top-style: solid;
-		top: 81px;
+		top: 82px;
 		right: 0;
 		min-height: 100vh;
 		animation-name: slideIn;
 		animation-duration: 0.4s;
 		background-color: #fff;
+		z-index: 999;
 	}
 
 	.sidebar ul li {
