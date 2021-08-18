@@ -25,7 +25,7 @@ const ProjectList = ({ projects }) => {
 	return (
 		<div>
 			{projects.map((p) => (
-				<div>
+				<div key={p.id}>
 					<ProjectCard
 						key={p.id}
 						title={p.title}
