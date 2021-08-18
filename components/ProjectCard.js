@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import styles from '../styles/ProjectCard.module.css';
 
-const ProjectCard = ({ title, desc, photo, width, height, tech, link, github }) => {
+const ProjectCard = ({ key, title, desc, photo, width, height, tech, link, github }) => {
 	return (
 		<div className={`${styles.card} animate`}>
 			<div className={styles.imgContainer}>
