@@ -307,7 +307,7 @@ const Home = ({ projects }) => {
 export default Home;
 
 export const getServerSideProps = async () => {
-	const res = await fetch('http://localhost:3000/api/projects');
+	const res = await fetch('https://portfolio-website-woad-nine.vercel.app/api/projects');
 	const projects = await res.json();
 
 	if (!projects) {
