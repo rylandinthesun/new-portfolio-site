@@ -31,9 +31,17 @@ import {
 	FaArrowRight
 } from 'react-icons/fa';
 import ProjectList from '../components/ProjectList';
+import { gsap } from 'gsap';
+import { useEffect, useRef } from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home ({ projects }) {
+	const h1Ref = useRef();
+
+	useEffect(() => {
+		gsap.from(h1Ref.current, { opacity: 0, delay: 0.2, duration: 1.6, y: -50, ease: 'power4.out' });
+	}, []);
+
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -43,7 +51,7 @@ export default function Home ({ projects }) {
 			</Head>
 
 			<main className={styles.main}>
-				<h1>SOFTWARE DEVELOPER & MUSICIAN.</h1>
+				<h1 ref={h1Ref}>SOFTWARE DEVELOPER & MUSICIAN.</h1>
 				<Image
 					className={styles.selfPortrait}
 					src={selfPortrait}

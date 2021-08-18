@@ -12,6 +12,7 @@
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	animation-name: toastShow;
+	animation-timing-function: ease;
 	animation-duration: 0.3s;
 }
 
@@ -62,7 +63,7 @@
 
 @keyframes toastShow {
 	0% {
-		transform: translateY(-35px);
+		transform: translateY(-20px);
 		opacity: 0;
 	}
 	100% {

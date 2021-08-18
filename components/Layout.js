@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/Layout.module.css';
+import Footer from './Footer';
 import Navbar from './Navbar';
 import Toast from './Toast';
 
@@ -23,6 +24,7 @@ const Layout = ({ children, themeSwitcher }) => {
 
 			<Navbar themeSwitcher={themeSwitcher} />
 			{children}
+			<Footer />
 		</div>
 	);
 };

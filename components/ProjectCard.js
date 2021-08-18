@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.css';
 
-const ProjectCard = ({ title, desc, photo, width, height, tech, link, github }) => {
+const ProjectCard = ({ key, title, desc, photo, width, height, tech, link, github }) => {
 	return (
-		<div className={styles.card}>
+		<div key={key} className={styles.card}>
 			<div className={styles.imgContainer}>
 				<Image
 					className={styles.projectImg}
@@ -12,7 +12,8 @@ const ProjectCard = ({ title, desc, photo, width, height, tech, link, github }) 
 					height={height}
 					width={width}
 					objectFit="cover"
-					priority
+					priority={true}
+					quality={50}
 				/>
 			</div>
 
@@ -24,7 +25,7 @@ const ProjectCard = ({ title, desc, photo, width, height, tech, link, github }) 
 							Site
 						</a>
 						<a href={github} target="_blank" rel="noopener noreferrer">
-							GitHub
+							Code
 						</a>
 					</div>
 				</div>
