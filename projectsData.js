@@ -65,8 +65,8 @@ export const projectsData = [
 			'SCSS',
 			'HTML'
 		],
-		link   : 'https://nextjs-dream-synth.vercel.app/',
-		github : 'https://github.com/rylandinthesun/nextjs-dream-synth'
+		link   : 'https://rylandinthesun.github.io/react-calculator/',
+		github : 'https://github.com/rylandinthesun/react-calculator'
 	},
 	{
 		id     : 5,
