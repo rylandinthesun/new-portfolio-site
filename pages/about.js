@@ -15,12 +15,12 @@ const About = () => {
 		gsap.from(h4Ref.current, {
 			opacity  : 0,
 			x        : -40,
-			duration : 2,
+			duration : 1.6,
 			ease     : 'power4.out'
 		});
 		gsap.from(p1Ref.current, {
 			opacity  : 0,
-			delay    : 0.8,
+			delay    : 0.6,
 			x        : 20,
 			duration : 1,
 			ease     : 'power4.out'

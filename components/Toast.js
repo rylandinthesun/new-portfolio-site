@@ -7,7 +7,7 @@ const Toast = ({ showToast, setShowToast }) => {
 		<div className={styles.toast}>
 			<div className={styles.title}>Currently looking for employment</div>
 			<div className={styles.desc}>
-				<span>If you like what you see =></span>
+				<span>If you like what you see ={`>`}</span>
 				<a
 					href="mailto:ryland.oehlers@gmail.com?subject=I WANT TO HIRE YOU!!!"
 					target="_blank"

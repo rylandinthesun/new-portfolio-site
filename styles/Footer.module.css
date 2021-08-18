@@ -39,7 +39,7 @@
 .socialLinks a {
 	display: inline-block;
 	font-size: 1.2rem;
-	padding: 0.4rem 0;
+	padding: 0.45rem 0;
 	width: 2.4rem;
 	height: 2.4rem;
 	text-align: center;
@@ -128,6 +128,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.pageLinks {
+		padding: 3rem 2rem;
+	}
 	.pageLinks a {
 		font-size: 0.9rem;
 	}

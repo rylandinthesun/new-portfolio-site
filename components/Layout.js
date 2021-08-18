@@ -11,7 +11,7 @@ const Layout = ({ children, themeSwitcher }) => {
 	] = useState(false);
 
 	useEffect(() => {
-		let timer = setTimeout(() => setShowToast(!showToast), 3000);
+		let timer = setTimeout(() => setShowToast(!showToast), 1500);
 
 		return () => {
 			clearTimeout(timer);

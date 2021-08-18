@@ -1,9 +1,10 @@
 import Image from 'next/image';
+
 import styles from '../styles/ProjectCard.module.css';
 
 const ProjectCard = ({ key, title, desc, photo, width, height, tech, link, github }) => {
 	return (
-		<div key={key} className={styles.card}>
+		<div key={key} className={`${styles.card} animate`}>
 			<div className={styles.imgContainer}>
 				<Image
 					className={styles.projectImg}
