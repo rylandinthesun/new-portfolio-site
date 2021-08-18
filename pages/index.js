@@ -34,11 +34,12 @@ import ProjectList from '../components/ProjectList';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';
+
 import styles from '../styles/Home.module.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home ({ projects }) {
+export const Home = ({ projects }) => {
 	const h1Ref = useRef();
 	const summaryRef = useRef();
 	const toolKitRef = useRef();
@@ -301,13 +302,19 @@ export default function Home ({ projects }) {
 			</section>
 		</div>
 	);
-}
+};
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	const res = await fetch('http://localhost:3000/api/projects');
-	const data = await res.json();
+	const projects = await res.json();
+
+	if (!projects) {
+		return {
+			notFound : true
+		};
+	}
 
 	return {
-		props : { projects: data }
+		props : { projects }
 	};
 };

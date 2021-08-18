@@ -10,13 +10,18 @@ const Layout = ({ children, themeSwitcher }) => {
 		setShowToast
 	] = useState(false);
 
-	useEffect(() => {
-		let timer = setTimeout(() => setShowToast(!showToast), 1500);
+	useEffect(
+		() => {
+			let timer = setTimeout(() => setShowToast(!showToast), 1500);
 
-		return () => {
-			clearTimeout(timer);
-		};
-	}, []);
+			return () => {
+				clearTimeout(timer);
+			};
+		},
+		[
+			showToast
+		]
+	);
 
 	return (
 		<div className={styles.layout}>

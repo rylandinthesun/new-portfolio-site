@@ -11,12 +11,18 @@ const Projects = ({ projects }) => {
 	);
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	const res = await fetch('http://localhost:3000/api/projects');
-	const data = await res.json();
+	const projects = await res.json();
+
+	if (!projects) {
+		return {
+			notFound : true
+		};
+	}
 
 	return {
-		props : { projects: data }
+		props : { projects }
 	};
 };
 

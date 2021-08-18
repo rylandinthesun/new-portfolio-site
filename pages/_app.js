@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import styled, { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from '../styles/themes';
+
 import '../styles/globals.css';
 
 const StyledApp = styled.div`color: ${(props) => props.theme.fontColor};`;

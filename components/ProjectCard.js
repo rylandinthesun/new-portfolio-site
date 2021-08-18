@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import styles from '../styles/ProjectCard.module.css';
 
-const ProjectCard = ({ key, title, desc, photo, width, height, tech, link, github }) => {
+const ProjectCard = ({ title, desc, photo, width, height, tech, link, github }) => {
 	return (
 		<div className={`${styles.card} animate`}>
 			<div className={styles.imgContainer}>
@@ -32,7 +32,7 @@ const ProjectCard = ({ key, title, desc, photo, width, height, tech, link, githu
 				</div>
 
 				<p>{desc}</p>
-				<div className={styles.tech}>{tech.map((t) => <span>{t}</span>)}</div>
+				<div className={styles.tech}>{tech.map((t, idx) => <span key={idx}>{t}</span>)}</div>
 			</div>
 		</div>
 	);
