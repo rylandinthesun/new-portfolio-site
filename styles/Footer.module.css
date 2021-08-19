@@ -22,12 +22,13 @@
 .myInfo h5 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	margin: 0 0 2rem 0;
 }
 
 .emailLink {
 	font-family: 'Space Mono', monospace;
+	font-size: 1.2rem;
 	margin-bottom: 2rem;
 	transition: 0.2s;
 }
@@ -38,10 +39,10 @@
 
 .socialLinks a {
 	display: inline-block;
-	font-size: 1.2rem;
-	padding: 0.45rem 0;
-	width: 2.4rem;
-	height: 2.4rem;
+	font-size: 1.4rem;
+	padding: 0.5rem 0;
+	width: 2.8rem;
+	height: 2.8rem;
 	text-align: center;
 	border-width: 3px;
 	border-style: solid;
@@ -65,7 +66,7 @@
 .pageLinks a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	transition: 0.2s;
 }
 
@@ -77,7 +78,7 @@
 	text-align: center;
 	padding: 2rem 0 4rem 0;
 	font-family: 'Space Mono', monospace;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 865px) {
@@ -86,11 +87,11 @@
 	}
 
 	.myInfo h5 {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 
 	.emailLink {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 
 	.pageLinks {
@@ -98,7 +99,7 @@
 	}
 
 	.pageLinks a {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 }
 
@@ -123,7 +124,7 @@
 	.container footer {
 		border-top-width: 2px;
 		border-top-style: solid;
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	}
 }
 
@@ -132,6 +133,6 @@
 		padding: 3rem 2rem;
 	}
 	.pageLinks a {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 }

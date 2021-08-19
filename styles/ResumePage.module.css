@@ -6,7 +6,7 @@
 }
 
 .main {
-	margin: 5rem 0;
+	margin: 1rem 0 5rem 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -14,10 +14,11 @@
 
 .pdfLink {
 	margin-bottom: 2rem;
+	font-size: 1.2rem;
 	border-width: 3px;
 	border-style: solid;
 	border-radius: 50px;
-	padding: 10px 10px;
+	padding: 10px 14px;
 	font-family: 'Space Mono', monospace;
 	transition: 0.2s;
 }
@@ -32,8 +33,14 @@
 	z-index: -1;
 }
 
+@media only screen and (max-width: 865px) {
+	.main {
+		margin: 8rem 0;
+	}
+}
+
 @media only screen and (max-width: 480px) {
 	.pdfLink {
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 	}
 }

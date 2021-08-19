@@ -1,11 +1,11 @@
 .navbar {
-	height: 60px;
+	height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	font-size: 12px;
-	padding: 40px 30px;
+	font-size: 14px;
+	padding: 40px 40px;
 	font-family: 'Space Mono', monospace;
 	z-index: 999;
 }
@@ -22,7 +22,7 @@
 
 .pageLinks a {
 	margin: 0 35px;
-	font-size: 16px;
+	font-size: 1.1rem;
 	transition: 0.2s;
 }
 
@@ -33,11 +33,11 @@
 .homeLink a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 .menuBtn {
-	font-size: 25px;
+	font-size: 2rem;
 	display: none;
 }
 
@@ -46,16 +46,16 @@
 }
 
 .themeSwitcher div span {
-	padding-top: 4px;
+	padding-top: 6px;
 	padding-right: 2px;
 }
 
 .themeSwitcher input {
 	-webkit-appearance: none;
 	appearance: none;
-	height: 20px;
-	width: 40px;
-	border: 1px solid #fff;
+	height: 28px;
+	width: 54px;
+	border: 2px solid #fff;
 	border-radius: 50px;
 	cursor: pointer;
 	outline: none;
@@ -66,23 +66,23 @@
 .themeSwitcher input:before {
 	content: "";
 	position: absolute;
-	height: 12px;
-	width: 12px;
+	height: 16px;
+	width: 16px;
 	background-color: #fff;
 	border-radius: 50%;
-	left: 4px;
-	top: 3px;
+	left: 5px;
+	top: 4px;
 	transition: 0.2s;
 }
 
 .themeSwitcher input:checked {
 	background-color: #fff;
-	border: 1px solid #000;
+	border: 2px solid #000;
 }
 
 .themeSwitcher input:checked:before {
 	background-color: #000;
-	left: 23px;
+	left: 30px;
 }
 
 .themeSwitcher input:checked:after {
@@ -91,8 +91,8 @@
 
 .onPageCircle {
 	display: inline-block;
-	height: 12px;
-	width: 12px;
+	height: 15px;
+	width: 15px;
 	border-style: solid;
 	border-width: 3px;
 	border-radius: 50%;
@@ -101,11 +101,13 @@
 
 @media only screen and (max-width: 865px) {
 	.navbar {
+		height: 80px;
 		background-color: #fff;
 		color: #000;
 		border-bottom-width: 2px;
 		border-bottom-style: solid;
 		position: fixed;
+		padding: 40px 30px;
 	}
 
 	.pageLinks {
@@ -113,11 +115,11 @@
 	}
 
 	.homeLink a {
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	.themeSwitcher input {
-		border: 1px solid #000;
+		border: 2px solid #000;
 	}
 
 	.themeSwitcher input:before {
@@ -132,5 +134,11 @@
 		display: block;
 		margin-left: 16px;
 		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.homeLink a {
+		font-size: 1.1rem;
 	}
 }

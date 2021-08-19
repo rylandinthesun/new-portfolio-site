@@ -3,12 +3,13 @@
 }
 
 .main {
-	margin: 5rem 0;
+	margin: 1rem 0 5rem 0;
 	padding: 0 3rem;
 }
 
 @media only screen and (max-width: 865px) {
 	.main {
+		margin: 8rem 0 5rem 0;
 		padding: 0 1rem;
 	}
 }

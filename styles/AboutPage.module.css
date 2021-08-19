@@ -7,7 +7,7 @@
 
 .main {
 	width: 100%;
-	margin-top: 2rem;
+	margin: 1rem 0 5rem 0;
 	padding: 0 3rem;
 	display: flex;
 	flex-direction: column;
@@ -17,7 +17,7 @@
 .main h4 {
 	font-family: 'Montserrat', sans-serif;
 	width: 70%;
-	font-size: 3.5rem;
+	font-size: 3.8rem;
 	font-weight: 900;
 }
 
@@ -26,8 +26,8 @@
 	width: 75%;
 	float: right;
 	text-align: right;
-	font-size: 1.2rem;
-	margin: 1rem 0 2rem 0;
+	font-size: 1.5rem;
+	margin: 1rem 0 3rem 0;
 }
 
 .paragraphNext {
@@ -35,28 +35,29 @@
 	width: 75%;
 	float: left;
 	text-align: left;
-	font-size: 1.2rem;
-	margin: 1rem 0 2rem 0;
+	font-size: 1.5rem;
+	margin: 1rem 0 3rem 0;
 }
 
 @media only screen and (max-width: 865px) {
 	.main {
 		padding: 0 1rem;
+		margin: 5rem 0 5rem 0;
 	}
 
 	.main h4 {
 		width: 80%;
-		font-size: 2.6rem;
+		font-size: 2.8rem;
 	}
 
 	.paragraph {
 		width: 90%;
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	.paragraphNext {
 		width: 90%;
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -66,10 +67,10 @@
 	}
 
 	.paragraph {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 
 	.paragraphNext {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 }

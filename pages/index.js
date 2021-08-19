@@ -114,10 +114,10 @@ const Home = ({ projects }) => {
 			x             : 20,
 			stagger       : 0.2
 		});
-		gsap.from(linkRef.curr1ent, {
+		gsap.from(linkRef.current, {
 			scrollTrigger : {
 				trigger : linkRef.current,
-				start   : 'top 90%',
+				start   : 'top 80%',
 				end     : 'top 60%',
 				scrub   : true
 			},
@@ -140,13 +140,17 @@ const Home = ({ projects }) => {
 			</Head>
 
 			<main className={styles.main}>
-				<h1 ref={h1Ref}>SOFTWARE DEVELOPER & MUSICIAN.</h1>
+				<h1 ref={h1Ref}>
+					<span>SOFTWARE</span>
+					<span>DEVELOPER</span>
+					<span>& MUSICIAN.</span>
+				</h1>
 
 				<Image
 					src={selfPortrait}
 					alt="Picture of the author"
-					width={300}
-					height={400}
+					width={350}
+					height={450}
 					objectFit="cover"
 					quality={75}
 					loading="eager"
