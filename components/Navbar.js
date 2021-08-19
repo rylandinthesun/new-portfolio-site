@@ -72,6 +72,9 @@ const Navbar = ({ themeSwitcher }) => {
 				<div>
 					<span>Mode</span>
 					<input onClick={() => themeSwitcher()} type="checkbox" id="theme-switcher" />
+					<label for="theme-switcher" style={{ display: 'none' }}>
+						Theme Switcher
+					</label>
 					<div>{open ? closeIcon : menuIcon}</div>
 				</div>
 			</ul>

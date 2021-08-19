@@ -15,7 +15,14 @@ const Resume = () => {
 					Click to view as PDF
 				</a>
 
-				<Image className={styles.resumePhoto} src={myResume} alt="Photo of resume" width={800} height={1000} />
+				<Image
+					className={styles.resumePhoto}
+					src={myResume}
+					alt="Photo of resume"
+					width={800}
+					height={1000}
+					quality={25}
+				/>
 			</main>
 		</div>
 	);

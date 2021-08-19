@@ -11,7 +11,7 @@ const Projects = ({ projects }) => {
 	);
 };
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
 	const res = await fetch('https://portfolio-website-woad-nine.vercel.app/api/projects');
 	const projects = await res.json();
 

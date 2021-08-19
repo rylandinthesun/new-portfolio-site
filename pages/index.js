@@ -53,7 +53,7 @@ const Home = ({ projects }) => {
 			scrollTrigger : {
 				trigger : summaryRef.current,
 				start   : 'top 80%',
-				end     : 'top 20%',
+				end     : 'top 40%',
 				scrub   : true
 			},
 			autoAlpha     : 0,
@@ -77,8 +77,8 @@ const Home = ({ projects }) => {
 		gsap.from('.stagger-in2', {
 			scrollTrigger : {
 				trigger : projectsRef.current,
-				start   : 'top 90%',
-				end     : 'top 10%',
+				start   : 'top 80%',
+				end     : 'top 40%',
 				scrub   : true
 			},
 			autoAlpha     : 0,
@@ -104,7 +104,7 @@ const Home = ({ projects }) => {
 			scrollTrigger : {
 				trigger : toolKitRef.current,
 				start   : 'top 80%',
-				end     : 'top 20%',
+				end     : 'top 40%',
 				scrub   : true
 			},
 			autoAlpha     : 0,
@@ -118,7 +118,7 @@ const Home = ({ projects }) => {
 			scrollTrigger : {
 				trigger : linkRef.current,
 				start   : 'top 90%',
-				end     : 'top 40%',
+				end     : 'top 60%',
 				scrub   : true
 			},
 			autoAlpha     : 0,
@@ -131,10 +131,13 @@ const Home = ({ projects }) => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Ryland Oehlers Portfolio</title>
-				<meta name="description" content="Portfolio for Ryland Oehlers" />
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<link rel="icon" href="/favicon.ico" />
+				<title>Ryland Oehlers Portfolio | Home</title>
+				<meta
+					name="description"
+					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years. Specializing in
+						Front-End Development, I am passionate about bringing together creative designs with code."
+				/>
+				<link rel="icon" href="🤪" />
 			</Head>
 
 			<main className={styles.main}>
@@ -146,6 +149,7 @@ const Home = ({ projects }) => {
 					width={300}
 					height={400}
 					objectFit="cover"
+					quality={50}
 					priority
 				/>
 			</main>
@@ -307,7 +311,7 @@ const Home = ({ projects }) => {
 
 export default Home;
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
 	const res = await fetch('https://portfolio-website-woad-nine.vercel.app/api/projects');
 	const projects = await res.json();
 
