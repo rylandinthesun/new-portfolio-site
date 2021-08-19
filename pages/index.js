@@ -144,9 +144,10 @@ const Home = ({ projects }) => {
 
 				<Image
 					src={selfPortrait}
-					alt="Picture of Ryland Oehlers"
-					width={296}
-					height={444}
+					alt="Picture of the author"
+					width={300}
+					height={400}
+					objectFit="cover"
 					quality={50}
 					loading="eager"
 				/>
