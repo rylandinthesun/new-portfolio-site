@@ -91,7 +91,7 @@ const Home = ({ projects }) => {
 			scrollTrigger : {
 				trigger : toolKitRef.current,
 				start   : 'top 80%',
-				end     : 'top 20%',
+				end     : 'top 40%',
 				scrub   : true
 			},
 			autoAlpha     : 0,
