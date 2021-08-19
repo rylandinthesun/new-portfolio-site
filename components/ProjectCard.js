@@ -13,7 +13,6 @@ const ProjectCard = ({ title, desc, photo, width, height, tech, link, github }) 
 					height={height}
 					width={width}
 					objectFit="cover"
-					priority={true}
 					quality={25}
 				/>
 			</div>

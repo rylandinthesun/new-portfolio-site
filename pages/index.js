@@ -131,13 +131,12 @@ const Home = ({ projects }) => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Ryland Oehlers Portfolio | Home</title>
+				<title>Home | Ryland Oehlers Portfolio</title>
 				<meta
 					name="description"
 					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years. Specializing in
 						Front-End Development, I am passionate about bringing together creative designs with code."
 				/>
-				<link rel="icon" href="🤪" />
 			</Head>
 
 			<main className={styles.main}>
@@ -145,12 +144,11 @@ const Home = ({ projects }) => {
 
 				<Image
 					src={selfPortrait}
-					alt="Picture of the author"
-					width={300}
-					height={400}
-					objectFit="cover"
+					alt="Picture of Ryland Oehlers"
+					width={296}
+					height={444}
 					quality={50}
-					priority
+					loading="eager"
 				/>
 			</main>
 

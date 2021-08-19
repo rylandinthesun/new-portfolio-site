@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import myResume from '../images/Ryland_Oehlers_Resume.jpg';
 import Image from 'next/image';
 import styles from '../styles/ResumePage.module.css';
@@ -5,6 +6,10 @@ import styles from '../styles/ResumePage.module.css';
 const Resume = () => {
 	return (
 		<div className={styles.container}>
+			<Head>
+				<title>Resume | Ryland Oehlers Portfolio</title>
+				<meta name="description" content="Ryland Oehlers resume photo and link to png version." />
+			</Head>
 			<main className={styles.main}>
 				<a
 					className={styles.pdfLink}

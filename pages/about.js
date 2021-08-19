@@ -1,4 +1,5 @@
 import { gsap } from 'gsap';
+import Head from 'next/head';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import styles from '../styles/AboutPage.module.css';
 import { useEffect, useRef } from 'react';
@@ -53,6 +54,13 @@ const About = () => {
 
 	return (
 		<div className={styles.container}>
+			<Head>
+				<title>About | Ryland Oehlers Portfolio</title>
+				<meta
+					name="description"
+					content="Ever since I was young, I wanted to be a rockstar, just like any other kid who loves music."
+				/>
+			</Head>
 			<main className={styles.main}>
 				<h4 ref={h4Ref}>Ever since I was young, I wanted to be a rockstar...</h4>
 
