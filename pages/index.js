@@ -114,7 +114,7 @@ const Home = ({ projects }) => {
 			x             : 20,
 			stagger       : 0.2
 		});
-		gsap.from(linkRef.current, {
+		gsap.from(linkRef.curr1ent, {
 			scrollTrigger : {
 				trigger : linkRef.current,
 				start   : 'top 90%',
@@ -148,7 +148,7 @@ const Home = ({ projects }) => {
 					width={300}
 					height={400}
 					objectFit="cover"
-					quality={50}
+					quality={75}
 					loading="eager"
 				/>
 			</main>
