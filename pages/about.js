@@ -69,8 +69,8 @@ const About = () => {
 						...just like any other kid who loves music. Luckily for me, I had a local rockstar dad, who made
 						a decent career from playing music around the city of Toledo, OH. He always encouraged me to
 						play instruments and be musical. Little did I know, that eventually as a young adult, I would be
-						able to join successful band, take on the opportunity of being a professional full-time touring
-						musician, and play music around the world. For most musicians, that’s the peak career
+						able to join a successful band, take on the opportunity of being a professional full-time
+						touring musician, and play music around the world. For most musicians, that’s the peak career
 						accomplishment. It’s always something that I’ve been truly grateful to ever experience.
 					</p>
 					<p ref={p2Ref} className={styles.paragraphNext}>
@@ -84,8 +84,8 @@ const About = () => {
 					<p ref={p3Ref} className={styles.paragraph}>
 						And then when the year 2020 came around, I had this feeling of wanting something new, and that’s
 						when I decided to become a Software Developer. That’s been my main focus, and I can’t get
-						enough. With Frontend development kind of calling to me the most, since it incorporates
-						creativity and logical design. My dream is to be able to incorporate music and software to build
+						enough. Frontend development kind of calling to me the most, since it incorporates creativity
+						and logical design. My dream is to be able to incorporate music and software to build
 						technologies that are helpful and enjoyable for musicians, non-musicians & everyone in between.
 					</p>
 				</section>
