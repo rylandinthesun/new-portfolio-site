@@ -13,7 +13,7 @@ const Resume = () => {
 			<main className={styles.main}>
 				<a
 					className={styles.pdfLink}
-					href="https://drive.google.com/file/d/1msk1l_0l58brFq_NNVUpwAEbLeOLNzlj/view?usp=sharing"
+					href="https://drive.google.com/file/d/1-9kgDW_09IoON4qtL0HhxI_Nk4rKstHd/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -26,7 +26,7 @@ const Resume = () => {
 					alt="Photo of resume"
 					width={800}
 					height={1000}
-					quality={25}
+					quality={50}
 				/>
 			</main>
 		</div>
