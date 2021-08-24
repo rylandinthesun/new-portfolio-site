@@ -13,7 +13,7 @@ const Resume = () => {
 			<main className={styles.main}>
 				<a
 					className={styles.pdfLink}
-					href="https://drive.google.com/file/d/1-9kgDW_09IoON4qtL0HhxI_Nk4rKstHd/view?usp=sharing"
+					href="https://drive.google.com/file/d/1BEHW-DgIwKnLJf9iXQH1kj46o1AEwXch/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
