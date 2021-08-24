@@ -117,7 +117,7 @@ const Home = ({ projects }) => {
 		gsap.from(linkRef.current, {
 			scrollTrigger : {
 				trigger : linkRef.current,
-				start   : 'top 80%',
+				start   : 'top 90%',
 				end     : 'top 60%',
 				scrub   : true
 			},

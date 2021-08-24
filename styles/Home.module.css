@@ -151,10 +151,11 @@
 .projects {
 	width: 100%;
 	padding: 0 3rem;
-	margin-top: 2rem;
+	margin-top: 8rem;
 	display: flex;
 	flex-direction: column;
 }
+
 .projectsTitle {
 	width: 100%;
 	display: flex;
@@ -165,6 +166,7 @@
 
 .projectsTitle h1 {
 	font-weight: 900;
+	margin-top: 0;
 }
 
 .moreProjects {

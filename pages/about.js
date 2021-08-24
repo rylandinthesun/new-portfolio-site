@@ -66,27 +66,27 @@ const About = () => {
 
 				<section className={styles.summary}>
 					<p ref={p1Ref} className={styles.paragraph}>
-						...just like any other kid who loves music. Luckily for me, I had a local rockstar dad, who made
-						a decent career from playing music around the city of Toledo, OH. He always encouraged me to
-						play instruments and be musical. Little did I know, that eventually as a young adult, I would be
-						able to join a successful band, take on the opportunity of being a professional full-time
-						touring musician, and play music around the world. For most musicians, that’s the peak career
-						accomplishment. It’s always something that I’ve been truly grateful to ever experience.
+						...just like every other kid who loves music. Luckily for me, I had a local rockstar dad, who
+						made a decent career from playing music around the city of Toledo, OH. He always encouraged me
+						to pursue music and learn any instrument I wanted. I never expected that, in my early twenties,
+						I would join a successful band and have the opportunity to be a professional full-time musician,
+						touring and playing music around the world. For most musicians, that’s the peak career
+						accomplishment. It’s always something that I’ve been truly grateful to experience.
 					</p>
 					<p ref={p2Ref} className={styles.paragraphNext}>
-						Like most musicians and songwriters, I started using DAW (Digital Audio Workstation) software to
-						record songs and musical ideas on my computer. I remember buying FL Studio from Guitar Center
-						when I was a Junior in high school. I’d go home and sit on my laptop for hours in my room making
-						random hip hop beats or house techno songs (I still do this LOL). I was always fascinated by how
-						these software’s worked and what technologies were used to create them. With my main focus on
-						being a musician, I never took the time or chance to figure that out.
+						I started using DAW (Digital Audio Workstation) software to record and produce songs on my
+						computer. I remember buying FL Studio from Guitar Center in high school and sitting on my laptop
+						for hours in my room making random hip hop beats or house techno songs (still do!). I was always
+						fascinated by how sound production software worked and what technologies were used to create
+						them.
 					</p>
 					<p ref={p3Ref} className={styles.paragraph}>
-						And then when the year 2020 came around, I had this feeling of wanting something new, and that’s
-						when I decided to become a Software Developer. That’s been my main focus, and I can’t get
-						enough. Frontend development kind of calling to me the most, since it incorporates creativity
-						and logical design. My dream is to be able to incorporate music and software to build
-						technologies that are helpful and enjoyable for musicians, non-musicians & everyone in between.
+						When the music industry took a hit in 2020, I immediately saw an opportunity to explore my
+						interest in software engineering. I soon enrolled in an intensive Software Development course
+						and am currently seeking entry level employment. I’m most interested in frontend development
+						since it incorporates both creativity and logical design. My dream is to be able to incorporate
+						music and software to build technologies that are helpful and enjoyable for musicians,
+						non-musicians & everyone in between.
 					</p>
 				</section>
 			</main>

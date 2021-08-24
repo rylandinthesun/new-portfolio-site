@@ -27,6 +27,7 @@ const Resume = () => {
 					width={800}
 					height={1000}
 					quality={50}
+					priority="eager"
 				/>
 			</main>
 		</div>
