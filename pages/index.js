@@ -315,7 +315,7 @@ const Home = ({ projects }) => {
 export default Home;
 
 export const getStaticProps = async () => {
-	const res = await fetch('https://portfolio-website-woad-nine.vercel.app/api/projects');
+	const res = await fetch('https://rylandoehlers.com/api/projects');
 	const projects = await res.json();
 
 	if (!projects) {
