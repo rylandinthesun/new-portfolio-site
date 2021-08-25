@@ -3,7 +3,7 @@ module.exports = {
 
 	images          : {
 		domains : [
-			'drive.google.com'
+			'i.postimg.cc'
 		]
 	}
 };

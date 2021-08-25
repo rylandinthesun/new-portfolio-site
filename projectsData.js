@@ -2,7 +2,7 @@ export const projectsData = [
 	{
 		id     : 1,
 		title  : 'Cinephile',
-		photo  : 'https://i.imgur.com/rYwSDWQ.png',
+		photo  : 'https://i.postimg.cc/L85YtrLn/cine-Phile-Macbook-Mock.png',
 		width  : 450,
 		height : 325,
 		desc   :
@@ -20,7 +20,7 @@ export const projectsData = [
 	{
 		id     : 2,
 		title  : 'React Quotes',
-		photo  : 'https://i.imgur.com/KNMEsWJ.png',
+		photo  : 'https://i.postimg.cc/jdZnJsWp/quote-Iphone-Mock.png',
 		width  : 150,
 		height : 325,
 		desc   :
@@ -37,7 +37,7 @@ export const projectsData = [
 	{
 		id     : 3,
 		title  : 'Lyrically',
-		photo  : 'https://i.imgur.com/r7a6qMv.png',
+		photo  : 'https://i.postimg.cc/5NxF0Ht5/lyrically-Macbook-Mock.png',
 		width  : 450,
 		height : 325,
 		desc   :
@@ -55,7 +55,7 @@ export const projectsData = [
 	{
 		id     : 4,
 		title  : 'Calculator',
-		photo  : 'https://i.imgur.com/VabmZjp.png',
+		photo  : 'https://i.postimg.cc/Vs9Cm9zL/calculator-Iphone-Mock.png',
 		width  : 150,
 		height : 325,
 		desc   : 'A small usable calculator built with React.',
@@ -71,7 +71,7 @@ export const projectsData = [
 	{
 		id     : 5,
 		title  : 'Dream Synth',
-		photo  : 'https://i.imgur.com/ecoyQ0X.png',
+		photo  : 'https://i.postimg.cc/kGy6sCTt/synth-App-Mock.png',
 		width  : 450,
 		height : 325,
 		desc   :
