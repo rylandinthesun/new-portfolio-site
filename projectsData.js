@@ -2,7 +2,7 @@ export const projectsData = [
 	{
 		id     : 1,
 		title  : 'Cinephile',
-		photo  : 'https://drive.google.com/uc?export=view&id=1EFoldjtAHz14gJdpSFrZQ4ywlRkFeynf',
+		photo  : 'https://i.imgur.com/rYwSDWQ.png',
 		width  : 450,
 		height : 325,
 		desc   :
@@ -20,7 +20,7 @@ export const projectsData = [
 	{
 		id     : 2,
 		title  : 'React Quotes',
-		photo  : 'https://drive.google.com/uc?export=view&id=1M24IG-kyOWIHGCF9Mo25sALNh5UxNvdw',
+		photo  : 'https://i.imgur.com/KNMEsWJ.png',
 		width  : 150,
 		height : 325,
 		desc   :
@@ -37,7 +37,7 @@ export const projectsData = [
 	{
 		id     : 3,
 		title  : 'Lyrically',
-		photo  : 'https://drive.google.com/uc?export=view&id=150mnpficdyyv4O6LfjMPKCGcmB0X4XGP',
+		photo  : 'https://i.imgur.com/r7a6qMv.png',
 		width  : 450,
 		height : 325,
 		desc   :
@@ -55,7 +55,7 @@ export const projectsData = [
 	{
 		id     : 4,
 		title  : 'Calculator',
-		photo  : 'https://drive.google.com/uc?export=view&id=16l0slJ4LvImE5vfDkG5NNBNPwWsoqxjB',
+		photo  : 'https://i.imgur.com/VabmZjp.png',
 		width  : 150,
 		height : 325,
 		desc   : 'A small usable calculator built with React.',
@@ -71,7 +71,7 @@ export const projectsData = [
 	{
 		id     : 5,
 		title  : 'Dream Synth',
-		photo  : 'https://drive.google.com/uc?export=view&id=1_PeClxML_q9fI99lYYmk7WEK_GIGGrfp',
+		photo  : 'https://i.imgur.com/ecoyQ0X.png',
 		width  : 450,
 		height : 325,
 		desc   :
