@@ -138,11 +138,11 @@ const Home = ({ projects }) => {
 					name="description"
 					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years."
 				/>
-				<meta name="image" content={selfPortraitMeta} />
+				<meta name="image" content="https://i.postimg.cc/CL7DhK6s/selfportrait-Meta.jpg" />
 				{/* Open Graph */}
 				<meta property="og:title" content="Ryland Oehlers Portfolio" />
 				<meta property="og:url" content="https://www.rylandoehlers.com/" />
-				<meta property="og:image" content={selfPortraitMeta} />
+				<meta property="og:image" content="https://i.postimg.cc/CL7DhK6s/selfportrait-Meta.jpg" />
 				<meta
 					property="og:description"
 					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years."
@@ -151,7 +151,7 @@ const Home = ({ projects }) => {
 				<meta name="twitter:card" content="summary" />
 				<meta property="twitter:title" content="Ryland Oehlers Portfolio" />
 				<meta property="twitter:creator" content="@rylandinthesun" />
-				<meta property="twitter:image" content={selfPortraitMeta} />
+				<meta property="twitter:image" content="https://i.postimg.cc/CL7DhK6s/selfportrait-Meta.jpg" />
 				<meta
 					property="twitter:description"
 					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years."
