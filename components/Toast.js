@@ -12,6 +12,7 @@ const Toast = ({ showToast, setShowToast }) => {
 					href="mailto:ryland.oehlers@gmail.com?subject=I WANT TO HIRE YOU!!!"
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Email"
 				>
 					<FiMail />
 				</a>

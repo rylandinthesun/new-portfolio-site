@@ -28,7 +28,8 @@ import {
 	FaCss3Alt,
 	FaBootstrap,
 	FaGitAlt,
-	FaArrowRight
+	FaArrowRight,
+	FaAngular
 } from 'react-icons/fa';
 import ProjectList from '../components/ProjectList';
 import { gsap } from 'gsap';
@@ -134,6 +135,25 @@ const Home = ({ projects }) => {
 				<title>Home | Ryland Oehlers Portfolio</title>
 				<meta
 					name="description"
+					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years. Specializing in
+						Front-End Development, I am passionate about bringing together creative designs with code."
+				/>
+				<meta name="image" content={selfPortrait} />
+				{/* Open Graph */}
+				<meta property="og:title" content="Ryland Oehlers Portfolio" />
+				<meta property="og:url" content="https://www.rylandoehlers.com/" />
+				<meta property="og:image" content={selfPortrait} />
+				<meta
+					property="og:description"
+					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years. Specializing in
+						Front-End Development, I am passionate about bringing together creative designs with code."
+				/>
+				{/* Twitter */}
+				<meta name="twitter:card" content="summary" />
+				<meta property="twitter:title" content="Ryland Oehlers Portfolio" />
+				<meta property="twitter:image" content={selfPortrait} />
+				<meta
+					property="twitter:description"
 					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years. Specializing in
 						Front-End Development, I am passionate about bringing together creative designs with code."
 				/>
@@ -261,6 +281,10 @@ const Home = ({ projects }) => {
 					<div className={`${styles.toolCard} stagger-in3`}>
 						<SiVisualstudiocode />
 						<span>VS Code</span>
+					</div>
+					<div className={`${styles.toolCard} ${styles.familiarWith} stagger-in3`}>
+						<FaAngular />
+						<span>Angular</span>
 					</div>
 					<div className={`${styles.toolCard} ${styles.familiarWith} stagger-in3`}>
 						<SiTypescript />

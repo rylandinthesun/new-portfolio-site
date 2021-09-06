@@ -69,14 +69,12 @@ const Navbar = ({ themeSwitcher }) => {
 			</ul>
 
 			<ul className={styles.themeSwitcher}>
-				<div>
+				<li>
 					<span>Mode</span>
+					<label htmlFor="theme-switcher">Theme Switcher</label>
 					<input onClick={() => themeSwitcher()} type="checkbox" id="theme-switcher" name="theme-switcher" />
-					<label htmlFor="theme-switcher" style={{ display: 'none' }}>
-						Theme Switcher
-					</label>
 					<div>{open ? closeIcon : menuIcon}</div>
-				</div>
+				</li>
 			</ul>
 
 			{open ? <Sidebar open={open} setOpen={setOpen} /> : null}

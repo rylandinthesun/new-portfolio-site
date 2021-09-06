@@ -7,7 +7,7 @@ const Footer = () => {
 		<div className={styles.container}>
 			<main className={styles.main}>
 				<div className={styles.myInfo}>
-					<h5>Ryland L. Oehlers</h5>
+					<h1>Ryland L. Oehlers</h1>
 					<a
 						className={styles.emailLink}
 						href="mailto:ryland.oehlers@gmail.com?subject=Website Inquiry"
@@ -17,10 +17,20 @@ const Footer = () => {
 						ryland.oehlers@gmail.com
 					</a>
 					<div className={styles.socialLinks}>
-						<a href="https://www.instagram.com/rylandinthesun" target="_blank" rel="noopener noreferrer">
+						<a
+							href="https://www.instagram.com/rylandinthesun"
+							target="_blank"
+							aria-label="Instagram"
+							rel="noopener noreferrer"
+						>
 							<FaInstagram />
 						</a>
-						<a href="https://www.twitter.com/rylandinthesun" target="_blank" rel="noopener noreferrer">
+						<a
+							href="https://www.twitter.com/rylandinthesun"
+							target="_blank"
+							aria-label="Twitter"
+							rel="noopener noreferrer"
+						>
 							<FaTwitter />
 						</a>
 					</div>
