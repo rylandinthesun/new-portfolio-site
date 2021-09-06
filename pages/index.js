@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import selfPortrait from '../images/selfportrait.jpg';
-import selfPortraitMeta from '../images/selfPortraitMeta.jpg';
+import selfPortraitMeta from '../images/selfportraitMeta.jpg';
 import { FiMail } from 'react-icons/fi';
 import {
 	SiJavascript,
