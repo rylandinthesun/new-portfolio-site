@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import selfPortrait from '../images/selfportrait.jpg';
+import selfPortraitMeta from '../images/selfPortraitMeta.jpg';
 import { FiMail } from 'react-icons/fi';
 import {
 	SiJavascript,
@@ -135,27 +136,25 @@ const Home = ({ projects }) => {
 				<title>Home | Ryland Oehlers Portfolio</title>
 				<meta
 					name="description"
-					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years. Specializing in
-						Front-End Development, I am passionate about bringing together creative designs with code."
+					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years."
 				/>
-				<meta name="image" content={selfPortrait} />
+				<meta name="image" content={selfPortraitMeta} />
 				{/* Open Graph */}
 				<meta property="og:title" content="Ryland Oehlers Portfolio" />
 				<meta property="og:url" content="https://www.rylandoehlers.com/" />
-				<meta property="og:image" content={selfPortrait} />
+				<meta property="og:image" content={selfPortraitMeta} />
 				<meta
 					property="og:description"
-					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years. Specializing in
-						Front-End Development, I am passionate about bringing together creative designs with code."
+					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years."
 				/>
 				{/* Twitter */}
 				<meta name="twitter:card" content="summary" />
 				<meta property="twitter:title" content="Ryland Oehlers Portfolio" />
-				<meta property="twitter:image" content={selfPortrait} />
+				<meta property="twitter:creator" content="@rylandinthesun" />
+				<meta property="twitter:image" content={selfPortraitMeta} />
 				<meta
 					property="twitter:description"
-					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years. Specializing in
-						Front-End Development, I am passionate about bringing together creative designs with code."
+					content="Full-Stack Software Engineer who was a Full-Time Touring Musician for 10+ years."
 				/>
 			</Head>
 
