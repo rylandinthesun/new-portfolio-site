@@ -19,6 +19,24 @@ export const projectsData = [
 	},
 	{
 		id     : 2,
+		title  : 'Issue Tracker',
+		photo  : 'https://i.postimg.cc/NfxLWh3f/issue-Tracker-Mock.png',
+		width  : 450,
+		height : 325,
+		desc   :
+			'An issue tracker built with Angular. Add new issues, set status, and delete when complete. Using JSON server on Heroku as a fake db.',
+		tech   : [
+			'Angular',
+			'RxJS',
+			'Netlify',
+			'JSON Server',
+			'Heroku'
+		],
+		link   : 'https://angular-issue-tracker.web.app/',
+		github : 'https://github.com/rylandinthesun/angular-issue-tracker'
+	},
+	{
+		id     : 3,
 		title  : 'React Quotes',
 		photo  : 'https://i.postimg.cc/jdZnJsWp/quote-Iphone-Mock.png',
 		width  : 150,
@@ -35,7 +53,7 @@ export const projectsData = [
 		github : 'https://github.com/rylandinthesun/react-quotes'
 	},
 	{
-		id     : 3,
+		id     : 4,
 		title  : 'Lyrically',
 		photo  : 'https://i.postimg.cc/5NxF0Ht5/lyrically-Macbook-Mock.png',
 		width  : 450,
@@ -53,7 +71,7 @@ export const projectsData = [
 		github : 'https://github.com/rylandinthesun/Lyrically'
 	},
 	{
-		id     : 4,
+		id     : 5,
 		title  : 'Calculator',
 		photo  : 'https://i.postimg.cc/Vs9Cm9zL/calculator-Iphone-Mock.png',
 		width  : 150,
@@ -69,7 +87,7 @@ export const projectsData = [
 		github : 'https://github.com/rylandinthesun/react-calculator'
 	},
 	{
-		id     : 5,
+		id     : 6,
 		title  : 'Dream Synth',
 		photo  : 'https://i.postimg.cc/kGy6sCTt/synth-App-Mock.png',
 		width  : 450,
