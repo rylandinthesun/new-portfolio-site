@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import selfPortrait from '../images/selfportrait.jpg';
-import selfPortraitMeta from '../images/selfportraitMeta.jpg';
 import { FiMail } from 'react-icons/fi';
 import {
 	SiJavascript,
@@ -234,6 +233,10 @@ const Home = ({ projects }) => {
 						<span>Next</span>
 					</div>
 					<div className={`${styles.toolCard} stagger-in3`}>
+						<SiTypescript />
+						<span>TypeScript</span>
+					</div>
+					<div className={`${styles.toolCard} stagger-in3`}>
 						<FaPython />
 						<span>Python</span>
 					</div>
@@ -284,10 +287,6 @@ const Home = ({ projects }) => {
 					<div className={`${styles.toolCard} ${styles.familiarWith} stagger-in3`}>
 						<FaAngular />
 						<span>Angular</span>
-					</div>
-					<div className={`${styles.toolCard} ${styles.familiarWith} stagger-in3`}>
-						<SiTypescript />
-						<span>TypeScript</span>
 					</div>
 					<div className={`${styles.toolCard} ${styles.familiarWith} stagger-in3`}>
 						<SiMongodb />

@@ -5,7 +5,7 @@ import styles from '../styles/Toast.module.css';
 const Toast = ({ showToast, setShowToast }) => {
 	return (
 		<div className={styles.toast}>
-			<div className={styles.title}>Currently looking for employment</div>
+			<div className={styles.title}>Currently open to employment</div>
 			<div className={styles.desc}>
 				<span>If you like what you see ={`>`}</span>
 				<a

@@ -82,11 +82,11 @@ const About = () => {
 					</p>
 					<p ref={p3Ref} className={styles.paragraph}>
 						When the music industry took a hit in 2020, I immediately saw an opportunity to explore my
-						interest in software engineering. I soon enrolled in an intensive Software Development course
-						and am currently seeking entry level employment. I’m most interested in frontend development
-						since it incorporates both creativity and logical design. My dream is to be able to incorporate
-						music and software to build technologies that are helpful and enjoyable for musicians,
-						non-musicians & everyone in between.
+						interest in software engineering. I soon enrolled and completed an intensive Software
+						Development course and am currently open to employment. I’m most passionate about frontend
+						development since it incorporates both creativity and logical design. My dream is to be able to
+						incorporate music and software to build technologies that are helpful and enjoyable for
+						musicians, non-musicians & everyone in between.
 					</p>
 				</section>
 			</main>

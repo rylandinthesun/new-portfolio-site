@@ -8,9 +8,8 @@ export const projectsData = [
 		desc   :
 			"A web app to help keep track of movies you've watched or want to watch. As a user, you're able to rate and review movies you have watched.",
 		tech   : [
-			'React',
 			'Next',
-			'Node',
+			'JavaScript',
 			'Firebase',
 			'OMDB API'
 		],
@@ -20,20 +19,19 @@ export const projectsData = [
 	{
 		id     : 2,
 		title  : 'Issue Tracker',
-		photo  : 'https://i.postimg.cc/NfxLWh3f/issue-Tracker-Mock.png',
+		photo  : 'https://i.postimg.cc/QtSFw4kJ/issue-tracker-macbookpro15-front.png',
 		width  : 450,
 		height : 325,
 		desc   :
-			'An issue tracker built with Angular. Add new issues, set status, and delete when complete. Using JSON server on Heroku as a fake db.',
+			'An issue tracker built with Next. Add new issues, set status, and delete when complete. Using JSON server on Heroku as a fake db.',
 		tech   : [
-			'Angular',
-			'RxJS',
-			'Netlify',
+			'Next',
+			'TypeScript',
 			'JSON Server',
 			'Heroku'
 		],
-		link   : 'https://angular-issue-tracker.web.app/',
-		github : 'https://github.com/rylandinthesun/angular-issue-tracker'
+		link   : 'https://issue-tracker-ochre.vercel.app/',
+		github : 'https://github.com/rylandinthesun/issue-tracker'
 	},
 	{
 		id     : 3,
@@ -63,7 +61,6 @@ export const projectsData = [
 		tech   : [
 			'Python',
 			'Flask',
-			'SQL',
 			'BeautifulSoup',
 			'Tailwind'
 		],
