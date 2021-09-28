@@ -336,7 +336,7 @@ const Home = ({ projects }) => {
 
 export default Home;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	const res = await fetch('https://rylandoehlers.com/api/projects');
 	const projects = await res.json();
 
