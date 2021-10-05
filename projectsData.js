@@ -35,20 +35,20 @@ export const projectsData = [
 	},
 	{
 		id     : 3,
-		title  : 'React Quotes',
-		photo  : 'https://i.postimg.cc/jdZnJsWp/quote-Iphone-Mock.png',
+		title  : 'Portfolio Website',
+		photo  : 'https://i.postimg.cc/d3SL8Jk5/portfolio-iphone12black-portrait.png',
 		width  : 150,
 		height : 325,
 		desc   :
-			'A simple web app that generates a random quote from the Quotable API. The save option is implemented using local storage.',
+			'The portfolio site you are on now. Displaying my personal creative choices along with responsiveness and ability to incorporate animations.',
 		tech   : [
-			'React',
-			'Node',
-			'Local Storage',
-			'Quotable API'
+			'Next',
+			'JavaScript',
+			'GSAP',
+			'Styled-Components'
 		],
-		link   : 'https://react-quotes-six.vercel.app/',
-		github : 'https://github.com/rylandinthesun/react-quotes'
+		link   : 'https://rylandoehlers.com',
+		github : 'https://github.com/rylandinthesun/new-portfolio-site'
 	},
 	{
 		id     : 4,
@@ -69,19 +69,20 @@ export const projectsData = [
 	},
 	{
 		id     : 5,
-		title  : 'Calculator',
-		photo  : 'https://i.postimg.cc/Vs9Cm9zL/calculator-Iphone-Mock.png',
+		title  : 'React Quotes',
+		photo  : 'https://i.postimg.cc/jdZnJsWp/quote-Iphone-Mock.png',
 		width  : 150,
 		height : 325,
-		desc   : 'A small usable calculator built with React.',
+		desc   :
+			'A simple web app that generates a random quote from the Quotable API. The save option is implemented using local storage.',
 		tech   : [
 			'React',
-			'JavaScript',
-			'SCSS',
-			'HTML'
+			'Node',
+			'Local Storage',
+			'Quotable API'
 		],
-		link   : 'https://rylandinthesun.github.io/react-calculator/',
-		github : 'https://github.com/rylandinthesun/react-calculator'
+		link   : 'https://react-quotes-six.vercel.app/',
+		github : 'https://github.com/rylandinthesun/react-quotes'
 	},
 	{
 		id     : 6,
