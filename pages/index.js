@@ -42,13 +42,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = ({ projects }) => {
 	const h1Ref = useRef();
+	const h1Ref2 = useRef();
+	const h1Ref3 = useRef();
 	const summaryRef = useRef();
 	const toolKitRef = useRef();
 	const projectsRef = useRef();
 	const linkRef = useRef();
 
+	const timeline = gsap.timeline();
+
 	useEffect(() => {
-		gsap.from(h1Ref.current, { opacity: 0, delay: 0.5, duration: 1, y: -50, ease: 'power4.out' });
+		timeline.from(h1Ref.current, {
+			opacity  : 0,
+			delay    : 0.5,
+			duration : 0.5,
+			y        : 50,
+			ease     : 'power1.out',
+			stagger  : 0.1
+		});
+		timeline.from(h1Ref2.current, { opacity: 0, duration: 0.5, y: 50, ease: 'power1.out', stagger: 0.1 });
+		timeline.from(h1Ref3.current, { opacity: 0, duration: 0.5, y: 50, ease: 'power1.out', stagger: 0.1 });
 
 		gsap.from('.stagger-in', {
 			scrollTrigger : {
@@ -59,7 +72,7 @@ const Home = ({ projects }) => {
 			},
 			autoAlpha     : 0,
 			opacity       : 0,
-			duration      : 0.4,
+			duration      : 0.6,
 			x             : -20,
 			stagger       : 0.2
 		});
@@ -84,7 +97,7 @@ const Home = ({ projects }) => {
 			},
 			autoAlpha     : 0,
 			opacity       : 0,
-			duration      : 0.4,
+			duration      : 0.6,
 			x             : -20,
 			stagger       : 0.2
 		});
@@ -97,7 +110,7 @@ const Home = ({ projects }) => {
 			},
 			autoAlpha     : 0,
 			opacity       : 0,
-			duration      : 0.2,
+			duration      : 0.4,
 			x             : -20,
 			stagger       : 0.2
 		});
@@ -158,10 +171,10 @@ const Home = ({ projects }) => {
 			</Head>
 
 			<main className={styles.main}>
-				<h1 ref={h1Ref}>
-					<span>SOFTWARE</span>
-					<span>DEVELOPER</span>
-					<span>& MUSICIAN.</span>
+				<h1>
+					<span ref={h1Ref}>SOFTWARE</span>
+					<span ref={h1Ref2}>DEVELOPER</span>
+					<span ref={h1Ref3}>& MUSICIAN.</span>
 				</h1>
 
 				<Image
