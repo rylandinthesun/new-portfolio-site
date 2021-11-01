@@ -1,0 +1,10 @@
+.socialLink {
+  margin: 0 6px;
+  transition: 0.2s;
+}
+
+.socialLink:hover {
+  display: inline-block;
+  filter: brightness(85%);
+  transform: translateY(-2px);
+}

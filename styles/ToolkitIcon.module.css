@@ -1,0 +1,29 @@
+.toolCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  height: 50px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+}
+
+.toolCard span {
+  margin-left: 5px;
+}
+
+.familiarWith {
+  border-color: #8e57f7;
+}
+
+@media only screen and (max-width: 865px) {
+  .toolCard {
+    font-size: 1.4rem;
+  }
+
+  .toolCard span {
+    display: none;
+  }
+}

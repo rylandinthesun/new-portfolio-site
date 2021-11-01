@@ -1,15 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const lightTheme = {
-	body        : '#fff',
-	fontColor   : '#000',
-	borderColor : '#000'
+  body: '#fff',
+  fontColor: '#1c1c1c',
+  borderColor: '#00ba34',
 };
 
 export const darkTheme = {
-	body        : '#000',
-	fontColor   : '#fff',
-	borderColor : '#fff'
+  body: '#1c1c1c',
+  fontColor: '#fff',
+  borderColor: '#fff',
 };
 
 export const GlobalStyles = createGlobalStyle`
