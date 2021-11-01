@@ -1,154 +1,154 @@
 .navbar {
-	height: 100px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	font-size: 14px;
-	padding: 40px 40px;
-	font-family: 'Space Mono', monospace;
-	z-index: 999;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  padding: 40px 40px;
+  font-family: 'Space Mono', monospace;
+  z-index: 999;
 }
 
 .navbar ul {
-	list-style: none;
-	padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .pageLinks {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .pageLinks a {
-	margin: 0 35px;
-	font-size: 1.1rem;
-	transition: 0.2s;
+  margin: 0 35px;
+  font-size: 1.1rem;
+  transition: 0.2s;
 }
 
 .pageLinks a:hover {
-	color: #949494;
+  color: #949494;
 }
 
 .homeLink a {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 900;
-	font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
 }
 
 .menuBtn {
-	font-size: 2rem;
-	display: none;
+  font-size: 2rem;
+  display: none;
 }
 
 .themeSwitcher li {
-	display: flex;
+  display: flex;
 }
 
 .themeSwitcher li span {
-	padding-top: 6px;
-	padding-right: 2px;
+  padding-top: 6px;
+  padding-right: 2px;
 }
 
 .themeSwitcher label {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .themeSwitcher input {
-	-webkit-appearance: none;
-	appearance: none;
-	height: 28px;
-	width: 54px;
-	border: 2px solid #fff;
-	border-radius: 50px;
-	cursor: pointer;
-	outline: none;
-	position: relative;
-	transition: 0.3s;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+  width: 54px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: 0.3s;
 }
 
 .themeSwitcher input:before {
-	content: "";
-	position: absolute;
-	height: 16px;
-	width: 16px;
-	background-color: #fff;
-	border-radius: 50%;
-	left: 5px;
-	top: 4px;
-	transition: 0.2s;
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 5px;
+  top: 4px;
+  transition: 0.2s;
 }
 
 .themeSwitcher input:checked {
-	background-color: #fff;
-	border: 2px solid #000;
+  background-color: #fff;
+  border: 2px solid #000;
 }
 
 .themeSwitcher input:checked:before {
-	background-color: #000;
-	left: 30px;
+  background-color: #000;
+  left: 30px;
 }
 
 .themeSwitcher input:checked:after {
-	color: #000;
+  color: #000;
 }
 
 .onPageCircle {
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-	border-style: solid;
-	border-width: 3px;
-	border-radius: 50%;
-	margin-right: 6px;
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  margin-right: 6px;
 }
 
 @media only screen and (max-width: 865px) {
-	.navbar {
-		height: 80px;
-		background-color: #fff;
-		color: #000;
-		border-bottom-width: 2px;
-		border-bottom-style: solid;
-		position: fixed;
-		padding: 40px 30px;
-	}
+  .navbar {
+    height: 80px;
+    background-color: #fff;
+    color: #000;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    position: fixed;
+    padding: 40px 30px;
+  }
 
-	.pageLinks {
-		display: none;
-	}
+  .pageLinks {
+    display: none;
+  }
 
-	.homeLink a {
-		font-size: 1.2rem;
-	}
+  .homeLink a {
+    font-size: 1.2rem;
+  }
 
-	.themeSwitcher input {
-		border: 2px solid #000;
-	}
+  .themeSwitcher input {
+    border: 2px solid #000;
+  }
 
-	.themeSwitcher input:before {
-		background-color: #000;
-	}
+  .themeSwitcher input:before {
+    background-color: #000;
+  }
 
-	.themeSwitcher span {
-		display: none;
-	}
+  .themeSwitcher span {
+    display: none;
+  }
 
-	.menuBtn {
-		display: block;
-		margin-left: 16px;
-		cursor: pointer;
-	}
+  .menuBtn {
+    display: block;
+    margin-left: 16px;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-	.homeLink a {
-		font-size: 1.1rem;
-	}
+  .homeLink a {
+    font-size: 1.1rem;
+  }
 }
