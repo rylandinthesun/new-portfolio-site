@@ -8,7 +8,7 @@ import {
 	SiPostgresql,
 	SiFirebase,
 	SiVisualstudiocode,
-	SiNextDotJs,
+	SiNextdotjs,
 	SiJest,
 	SiJquery,
 	SiTailwindcss,
@@ -242,7 +242,7 @@ const Home = ({ projects }) => {
 						<span>JavaScript</span>
 					</div>
 					<div className={`${styles.toolCard} stagger-in3`}>
-						<SiNextDotJs />
+						<SiNextdotjs />
 						<span>Next</span>
 					</div>
 					<div className={`${styles.toolCard} stagger-in3`}>
