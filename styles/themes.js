@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const lightTheme = {
   body: '#fff',
   fontColor: '#121212',
-  borderColor: '#fff',
+  borderColor: '#121212',
 };
 
 export const darkTheme = {

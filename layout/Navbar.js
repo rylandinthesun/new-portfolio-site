@@ -12,11 +12,11 @@ const Navbar = ({ themeSwitcher }) => {
   const [open, setOpen] = useState(false);
 
   const menuIcon = (
-    <FiMenu className={styles.menuBtn} onClick={() => setOpen(!open)} />
+    <FiMenu className={styles.menuBtn} color='#121212' onClick={() => setOpen(!open)} />
   );
 
   const closeIcon = (
-    <RiCloseFill className={styles.menuBtn} onClick={() => setOpen(!open)} />
+    <RiCloseFill className={styles.menuBtn} color='#121212' onClick={() => setOpen(!open)} />
   );
 
   const onPageCircle = <span className={styles.onPageCircle} />;

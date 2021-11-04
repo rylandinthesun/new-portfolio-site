@@ -77,9 +77,9 @@
 
 .familiar {
   padding: 0 3rem;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   font-family: 'Space Mono', monospace;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .familiar span {
@@ -108,7 +108,7 @@
 }
 
 .tools {
-  width: 75%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 0.6rem;
@@ -225,7 +225,7 @@
 
 @media only screen and (max-width: 480px) {
   .main {
-    padding: 0 1rem;
+    padding: 0 1.2rem;
   }
 
   .main h1 {
@@ -278,10 +278,9 @@
   }
 
   .tools {
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     margin-right: 0;
     margin-top: 1.4rem;
-    width: 100%;
     justify-content: space-evenly;
     align-content: space-evenly;
     align-items: center;
