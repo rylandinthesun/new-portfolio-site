@@ -2,25 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  height: 50px;
+  height: 2.4rem;
   font-family: 'Space Mono', monospace;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .toolCard span {
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 
 .familiarWith {
-  border-color: #8e57f7;
+  color: grey;
 }
 
 @media only screen and (max-width: 865px) {
   .toolCard {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
 
   .toolCard span {

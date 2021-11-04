@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FaInstagram, FaTwitter } from 'react-icons/fa';
+import SocialLink from '../components/SocialLink';
 import styles from '../styles/Footer.module.css';
 
 const Footer = () => {
@@ -17,22 +18,14 @@ const Footer = () => {
 						ryland.oehlers@gmail.com
 					</a>
 					<div className={styles.socialLinks}>
-						<a
-							href="https://www.instagram.com/rylandinthesun"
-							target="_blank"
-							aria-label="Instagram"
-							rel="noopener noreferrer"
-						>
-							<FaInstagram />
-						</a>
-						<a
-							href="https://www.twitter.com/rylandinthesun"
-							target="_blank"
-							aria-label="Twitter"
-							rel="noopener noreferrer"
-						>
-							<FaTwitter />
-						</a>
+					<SocialLink
+              url="https://www.instagram.com/rylandinthesun"
+              icon={<FaInstagram color="#F58529" />}
+            />
+						<SocialLink
+              url="https://www.twitter.com/rylandinthesun"
+              icon={<FaTwitter color="#55ACEE" />}
+            />
 					</div>
 				</div>
 				<ul className={styles.pageLinks}>

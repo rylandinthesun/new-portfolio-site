@@ -57,32 +57,33 @@ const Home = ({ projects }) => {
   useEffect(() => {
     timeline.from(h1Ref.current, {
       opacity: 0,
-      delay: 0.3,
-      duration: 0.4,
+      delay: 0.6,
+      duration: 0.5,
       y: 50,
       ease: 'power1.out',
       stagger: 0.1,
     });
     timeline.from(h1Ref2.current, {
       opacity: 0,
-      duration: 0.4,
+      duration: 0.5,
       y: 50,
       ease: 'power1.out',
       stagger: 0.1,
     });
     timeline.from(h1Ref3.current, {
       opacity: 0,
-      duration: 0.4,
+      duration: 0.5,
       y: 50,
       ease: 'power1.out',
       stagger: 0.1,
     });
     timeline.to(mainTitleRef.current, {
       opacity: 1,
-      duration: 1,
+      duration: 0.5,
       ease: 'power1.out',
       stagger: 0.1,
       color: '#00875a',
+      textShadow: '6px 6px 0px rgba(0,0,0,0.25)'
     });
 
     gsap.from('.stagger-in', {
@@ -249,7 +250,7 @@ const Home = ({ projects }) => {
             />
             <SocialLink
               url="https://www.github.com/rylandinthesun"
-              icon={<FaGithub color="#AD5C51" />}
+              icon={<FaGithub color="#F4CBB2" />}
             />
             <SocialLink
               url="https://www.instagram.com/rylandinthesun"
@@ -304,12 +305,12 @@ const Home = ({ projects }) => {
             name="VS Code"
           />
           <ToolkitIcon
-            icon={<FaAngular color="#dd1b16" />}
+            icon={<FaAngular color="grey" />}
             name="Angular"
             familiarWith
           />
           <ToolkitIcon
-            icon={<SiMongodb color="#4db33d" />}
+            icon={<SiMongodb color="grey" />}
             name="MongoDB"
             familiarWith
           />
@@ -327,7 +328,7 @@ const Home = ({ projects }) => {
       </section>
 
       <h6 className={`${styles.familiar} stagger-in3`}>
-        <span>PURPLE</span> = FAMILIAR WITH
+        <span>GREY</span> = FAMILIAR WITH
       </h6>
 
       <section ref={projectsRef} className={styles.projects}>

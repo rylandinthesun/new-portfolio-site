@@ -1,138 +1,138 @@
 .container {
-	padding: 0 3rem;
+  padding: 0 3rem;
 }
 
 .main {
-	border-top-width: 2px;
-	border-top-style: solid;
-	display: flex;
-	width: 100%;
+  border-top-width: 2px;
+  border-top-style: solid;
+  display: flex;
+  width: 100%;
 }
 
 .myInfo {
-	width: 40%;
-	border-right-width: 2px;
-	border-right-style: solid;
-	display: flex;
-	padding: 4rem 0;
-	flex-direction: column;
-	justify-content: space-between;
+  width: 40%;
+  border-right-width: 2px;
+  border-right-style: solid;
+  display: flex;
+  padding: 4rem 0;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .myInfo h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 900;
-	font-size: 1.6rem;
-	margin: 0 0 2rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  margin: 0 0 2rem 0;
 }
 
 .emailLink {
-	font-family: 'Space Mono', monospace;
-	font-size: 1.2rem;
-	margin-bottom: 2rem;
-	transition: 0.2s;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  transition: 0.2s;
 }
 
 .emailLink:hover {
-	color: #949494;
+  color: #949494;
 }
 
 .socialLinks a {
-	display: inline-block;
-	font-size: 1.4rem;
-	padding: 0.5rem 0;
-	width: 2.8rem;
-	height: 2.8rem;
-	text-align: center;
-	border-width: 3px;
-	border-style: solid;
-	border-radius: 50%;
-	margin-right: 8px;
-	transition: 0.2s;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: 0.2s;
 }
 
 .socialLinks a:hover {
-	background-color: #949494;
+  filter: brightness(85%);
 }
 
 .pageLinks {
-	list-style: none;
-	width: 60%;
-	display: flex;
-	justify-content: space-between;
-	padding: 3rem 4rem;
+  list-style: none;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
 }
 
 .pageLinks a {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 900;
-	font-size: 1.3rem;
-	transition: 0.2s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  transition: 0.2s;
 }
 
 .pageLinks a:hover {
-	color: #949494;
+  color: #949494;
 }
 
 .container footer {
-	text-align: center;
-	padding: 2rem 0 4rem 0;
-	font-family: 'Space Mono', monospace;
-	font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 865px) {
-	.container {
-		padding: 0 1.5rem;
-	}
+  .container {
+    padding: 0 1.5rem;
+  }
 
-	.myInfo h5 {
-		font-size: 1.3rem;
-	}
+  .myInfo h5 {
+    font-size: 1.3rem;
+  }
 
-	.emailLink {
-		font-size: 1rem;
-	}
+  .emailLink {
+    font-size: 1rem;
+  }
 
-	.pageLinks {
-		padding: 3rem 3rem;
-	}
+  .pageLinks {
+    padding: 3rem 3rem;
+  }
 
-	.pageLinks a {
-		font-size: 1.1rem;
-	}
+  .pageLinks a {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-	.main {
-		flex-direction: column;
-	}
+  .main {
+    flex-direction: column;
+  }
 
-	.myInfo {
-		width: 100%;
-		border-right-width: 0;
-	}
+  .myInfo {
+    width: 100%;
+    border-right-width: 0;
+  }
 
-	.pageLinks {
-		width: 100%;
-		border-top-width: 2px;
-		border-top-style: solid;
-		align-items: center;
-		margin: 0;
-	}
+  .pageLinks {
+    width: 100%;
+    border-top-width: 2px;
+    border-top-style: solid;
+    align-items: center;
+    margin: 0;
+  }
 
-	.container footer {
-		border-top-width: 2px;
-		border-top-style: solid;
-		font-size: 0.8rem;
-	}
+  .container footer {
+    border-top-width: 2px;
+    border-top-style: solid;
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-	.pageLinks {
-		padding: 3rem 2rem;
-	}
-	.pageLinks a {
-		font-size: 1rem;
-	}
+  .pageLinks {
+    padding: 3rem 2rem;
+  }
+  .pageLinks a {
+    font-size: 1rem;
+  }
 }
