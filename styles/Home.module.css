@@ -108,7 +108,7 @@
 }
 
 .tools {
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 0.6rem;
@@ -278,7 +278,7 @@
   }
 
   .tools {
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     margin-right: 0;
     margin-top: 1.4rem;
     justify-content: space-evenly;

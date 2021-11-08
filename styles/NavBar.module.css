@@ -108,6 +108,7 @@
   border-width: 3px;
   border-radius: 50%;
   margin-right: 6px;
+  border-color: #dcb434;
 }
 
 @media only screen and (max-width: 865px) {
