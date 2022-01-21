@@ -89,8 +89,7 @@ const About = () => {
           <p ref={p3Ref} className={styles.paragraph}>
             When the music industry took a hit in 2020, I immediately saw an
             opportunity to explore my interest in software engineering. I soon
-            enrolled and completed an intensive Software Development course and
-            am currently open to employment. I’m most passionate about frontend
+            enrolled and completed an intensive Software Development course. I’m most passionate about frontend
             development since it incorporates both creativity and logical
             design. My dream is to be able to incorporate music and software to
             build technologies that are helpful and enjoyable for musicians,

@@ -5,6 +5,7 @@ import selfPortrait from '../images/selfportrait.jpg'
 import { FiMail } from 'react-icons/fi'
 import { SiJavascript, SiPostgresql, SiFirebase, SiVisualstudiocode, SiNextdotjs, SiJest, SiJquery, SiTailwindcss, SiTypescript, SiMongodb } from 'react-icons/si'
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaReact, FaNodeJs, FaPython, FaDatabase, FaHtml5, FaCss3Alt, FaBootstrap, FaGitAlt, FaArrowRight, FaAngular } from 'react-icons/fa'
+import { RiRemixiconLine } from 'react-icons/ri'
 import ProjectList from '../components/ProjectList'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
@@ -209,8 +210,9 @@ const Home = ({ projects }) => {
           <ToolkitIcon icon={<SiJest color='#e34c26' />} name='Jest' />
           <ToolkitIcon icon={<SiJquery color='#78cff5' />} name='JQuery' />
           <ToolkitIcon icon={<SiVisualstudiocode color='#0078d7' />} name='VS Code' />
-          <ToolkitIcon icon={<FaAngular color='grey' />} name='Angular' familiarWith />
+          <ToolkitIcon icon={<RiRemixiconLine color='grey' />} name='Remix' familiarWith />
           <ToolkitIcon icon={<SiMongodb color='grey' />} name='MongoDB' familiarWith />
+          <ToolkitIcon icon={<FaAngular color='grey' />} name='Angular' familiarWith />
         </div>
 
         <div className={styles.toolkitTitle}>

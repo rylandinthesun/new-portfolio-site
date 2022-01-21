@@ -5,14 +5,18 @@ import Navbar from './Navbar';
 import Toast from '../components/Toast';
 
 const Layout = ({ children, themeSwitcher }) => {
+  const employed = true;
   const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
-    let timer = setTimeout(() => setShowToast(!showToast), 3000);
+    if (!employed) {
+      let timer = setTimeout(() => setShowToast(!showToast), 3000);
 
-    return () => {
-      clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
     };
+    }
+    
   }, []);
 
   return (
