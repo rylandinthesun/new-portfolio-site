@@ -19,4 +19,8 @@ export const GlobalStyles = createGlobalStyle`
       color: ${(props) => props.theme.fontColor};
 		  border-color: ${(props) => props.theme.borderColor}
     }
+    
+    a {
+      color: ${(props) => props.theme.fontColor};
+    }
 `;
