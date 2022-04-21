@@ -128,6 +128,7 @@
 
   .homeLink a {
     font-size: 1.2rem;
+    color: black;
   }
 
   .themeSwitcher input {

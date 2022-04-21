@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import myResume from '../images/Ryland_Oehlers_Resume_2021.png';
+import myResume from '../images/Ryland_Oehlers_Resume_2022.png';
 import Image from 'next/image';
 import styles from '../styles/ResumePage.module.css';
 
