@@ -12,17 +12,18 @@
   // show the navbar on scroll or if window width is less than 768px
   window.addEventListener("scroll", () => {
     const navbar = navBar?.parentElement;
-    if (!navbar) return;
+    const aboutSection = document.querySelector("#about") as HTMLElement;
+    if (!navbar || !aboutSection) return;
 
-    if (window.scrollY > 60) {
-      if (navbar.classList.contains("sm:-translate-y-20")) {
-        navbar.classList.remove("sm:-translate-y-20");
-        navbar.classList.add("sm:translate-y-0");
+    if (window.scrollY > aboutSection.offsetTop - 100) {
+      if (navbar.classList.contains("-translate-y-20")) {
+        navbar.classList.remove("-translate-y-20");
+        navbar.classList.add("translate-y-0");
       }
     } else {
-      if (navbar.classList.contains("sm:translate-y-0")) {
-        navbar.classList.remove("sm:translate-y-0");
-        navbar.classList.add("sm:-translate-y-20");
+      if (navbar.classList.contains("translate-y-0")) {
+        navbar.classList.remove("translate-y-0");
+        navbar.classList.add("-translate-y-20");
       }
     }
   });
