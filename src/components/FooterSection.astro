@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+---
+
+<div class="py-8 px-5">
+  <div
+    class="flex flex-col-reverse sm:flex-row justify-between items-start sm:items-center"
+  >
+    <div class="flex flex-col">
+      <a
+        href="mailto:ryland@gmail.com?subject=Website%20Inquiry"
+        class="mt-3 text-lg sm:text-xl md:text-2xl text-slate-800 font-medium uppercase tracking-wider link link-hover mb-5 w-fit"
+      >
+        ryland.oehlers@gmail.com
+      </a>
+      <a
+        href="https://www.linkedin.com/in/rylandoehlers"
+        class="mt-1 text-lg sm:text-xl md:text-2xl text-slate-800 font-medium uppercase tracking-wider link link-hover w-fit"
+      >
+        LinkedIn
+      </a>
+      <a
+        href="https://www.github.com/rylandoehlers"
+        class="mt-1 text-lg sm:text-xl md:text-2xl text-slate-800 font-medium uppercase tracking-wider link link-hover w-fit"
+      >
+        GitHub
+      </a>
+      <a
+        href="https://www.instagram.com/rylandinthesun"
+        class="mt-1 text-lg sm:text-xl md:text-2xl text-slate-800 font-medium uppercase tracking-wider link link-hover w-fit"
+      >
+        Instagram
+      </a>
+    </div>
+    <Image
+      src="/images/headshot.jpg"
+      alt="Ryland Oehlers headshot"
+      class="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover border-4 border-stone-200 mb-2 sm:mb-0"
+      width={300}
+      height={300}
+    />
+  </div>
+  <p class="font-mono text-xs sm:text-sm text-stone-100 pt-8">
+    &copy Ryland Oehlers 2024
+  </p>
+</div>

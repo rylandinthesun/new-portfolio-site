@@ -1,0 +1,125 @@
+---
+import ToolkitGroup from "../components/ToolkitGroup.astro";
+import ToolkitCard from "../components/ToolkitCard.astro";
+
+const languages = [
+  { icon: "javascript", name: "Javascript" },
+  { icon: "typescript", name: "Typescript" },
+  { icon: "python", name: "Python" },
+  { icon: "html", name: "HTML" },
+  { icon: "css", name: "CSS" },
+  { icon: "sass", name: "SASS" },
+  { icon: "sql", name: "SQL" }
+];
+
+const frameworks = [
+  { icon: "react", name: "React" },
+  { icon: "next", name: "Next.js" },
+  { icon: "remix", name: "Remix" },
+  { icon: "astro", name: "Astro" },
+  { icon: "node", name: "Node.js" },
+  { icon: "express", name: "Express" },
+  { icon: "django", name: "Django" }
+];
+
+const stylingAndUI = [
+  { icon: "tailwind", name: "Tailwind" },
+  { icon: "bootstrap", name: "Bootstrap" },
+  { icon: "daisyui", name: "DaisyUI" },
+  { icon: "blueprint", name: "Blueprint" },
+  { icon: "styled-components", name: "Styled Components" },
+  { icon: "chakraui", name: "ChakraUI" }
+];
+
+const testing = [
+  { icon: "cypress", name: "Cypress" },
+  { icon: "jest", name: "Jest" },
+  { icon: "playwright", name: "Playwright" }
+];
+
+const dataAndServerManagement = [
+  { icon: "react-query", name: "React Query" },
+  { icon: "postgresql", name: "PostgreSQL" },
+  { icon: "firebase", name: "Firebase" },
+  { icon: "json", name: "JSON" }
+];
+
+const versionControl = [
+  { icon: "git", name: "Git" },
+  { icon: "github", name: "GitHub" }
+];
+
+const deployment = [
+  { icon: "vercel", name: "Vercel" },
+  { icon: "netlify", name: "Netlify" }
+];
+
+const softwares = [
+  { icon: "vscode", name: "VSCode" },
+  { icon: "figma", name: "Figma" },
+  { icon: "slack", name: "Slack" },
+  { icon: "insomnia", name: "Insomnia" },
+  { icon: "notion", name: "Notion" }
+];
+---
+
+<div
+  class="h-full my-28 w-full flex flex-col justify-center items-center px-2 space-y-10"
+>
+  <ToolkitGroup title="Languages">
+    {
+      languages.map(({ icon, name }) => (
+        <ToolkitCard iconName={icon} name={name} />
+      ))
+    }
+  </ToolkitGroup>
+  <ToolkitGroup title="Frameworks">
+    {
+      frameworks.map(({ icon, name }) => (
+        <ToolkitCard iconName={icon} name={name} />
+      ))
+    }
+  </ToolkitGroup>
+  <ToolkitGroup title="Styling & UI">
+    {
+      stylingAndUI.map(({ icon, name }) => (
+        <ToolkitCard iconName={icon} name={name} />
+      ))
+    }
+  </ToolkitGroup>
+  <ToolkitGroup title="Testing">
+    {
+      testing.map(({ icon, name }) => (
+        <ToolkitCard iconName={icon} name={name} />
+      ))
+    }
+  </ToolkitGroup>
+  <ToolkitGroup title="Data & Server Management">
+    {
+      dataAndServerManagement.map(({ icon, name }) => (
+        <ToolkitCard iconName={icon} name={name} />
+      ))
+    }
+  </ToolkitGroup>
+  <ToolkitGroup title="Version Control">
+    {
+      versionControl.map(({ icon, name }) => (
+        <ToolkitCard iconName={icon} name={name} />
+      ))
+    }
+  </ToolkitGroup>
+  <ToolkitGroup title="Deployment">
+    {
+      deployment.map(({ icon, name }) => (
+        <ToolkitCard iconName={icon} name={name} />
+      ))
+    }
+  </ToolkitGroup>
+  <ToolkitGroup title="Softwares">
+    {
+      softwares.map(({ icon, name }) => (
+        <ToolkitCard iconName={icon} name={name} />
+      ))
+    }
+  </ToolkitGroup>
+</div>

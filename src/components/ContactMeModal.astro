@@ -1,0 +1,68 @@
+<dialog id="contact-form-modal" class="modal">
+  <div class="modal-box bg-white border-4 border-slate-800 rounded-lg">
+    <form method="dialog">
+      <button
+        id="cancel-contact"
+        class="btn btn-sm btn-circle btn-ghost text-sky-600 absolute right-2 top-2"
+        >✕</button
+      >
+    </form>
+    <h3 class="font-bold text-2xl sm:text-4xl font-mono text-emerald-600">
+      Contact me!
+    </h3>
+    <form class="mt-4 space-y-4" action="https://submit-form.com/tz87O7IAH">
+      <input
+        type="checkbox"
+        name="_honeypot"
+        style="display:none"
+        tabindex="-1"
+        autocomplete="off"
+      />
+      <input
+        type="hidden"
+        name="_redirect"
+        value="http://rylandoehlers.com/?contact=sent"
+      />
+      <label
+        class="input max-[280px]:input-md input-lg input-bordered border-slate-800 focus-within:border-slate-800 focus-within:outline-emerald-600 flex items-center gap-2 bg-white text-sky-600 uppercase font-semibold"
+      >
+        Name<span class="text-rose-600">*</span>
+        <input
+          type="text"
+          name="name"
+          class="grow text-slate-800"
+          placeholder="John Doe"
+          required
+        />
+      </label>
+      <label
+        class="input max-[280px]:input-md input-lg input-bordered border-slate-800 focus-within:border-slate-800 focus-within:outline-emerald-600 flex items-center gap-2 bg-white text-sky-600 uppercase font-semibold"
+      >
+        Email<span class="text-rose-600">*</span>
+        <input
+          type="email"
+          name="email"
+          class="grow text-slate-800"
+          placeholder="john@gmail.com"
+          required
+        />
+      </label>
+      <textarea
+        name="message"
+        class="textarea max-[280px]:textarea-md textarea-lg textarea-bordered w-full border-slate-800 focus-within:border-slate-800 focus-within:outline-emerald-600 bg-white text-slate-800 font-semibold resize-none"
+        placeholder="Message (required)"
+        required></textarea>
+      <div class="w-full flex items-center justify-end space-x-3">
+        <button
+          id="cancel-contact"
+          class="px-4 py-2 text-xl border-2 border-slate-800 rounded-lg text-slate-800 hover:bg-slate-100"
+          >Cancel</button
+        >
+        <button
+          class="px-6 py-2 text-xl border-2 border-emerald-600 bg-emerald-600 rounded-lg text-slate-50 hover:bg-emerald-700"
+          type="submit">Send</button
+        >
+      </div>
+    </form>
+  </div>
+</dialog>

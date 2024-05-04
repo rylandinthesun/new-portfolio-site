@@ -1,0 +1,21 @@
+<script>
+  // if query param "contacted=success" is present, show thank you dialog
+  const urlParams = new URLSearchParams(window.location.search);
+  const thankYou = urlParams.get("contact") === "sent";
+  const dialog = document.getElementById(
+    "thank-you-modal"
+  ) as HTMLDialogElement;
+
+  const cancelBtn = document.getElementById(
+    "close-thank-you-modal"
+  ) as HTMLButtonElement;
+
+  if (thankYou) {
+    dialog.showModal();
+  }
+
+  cancelBtn.addEventListener("click", () => {
+    window.history.replaceState({}, document.title, window.location.pathname);
+    dialog.close();
+  });
+</script>

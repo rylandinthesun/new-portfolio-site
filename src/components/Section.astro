@@ -1,0 +1,27 @@
+---
+export interface Props {
+  href?: string;
+  bgColor?: string;
+}
+
+const { href, bgColor = "white" } = Astro.props as Props;
+
+const getBgColor = (color: string) => {
+  switch (color) {
+    case "white":
+      return "bg-gradient-to-tr from-stone-100 to-85% to-stone-200";
+    case "blue":
+      return "bg-gradient-to-tr from-sky-500 to-85% to-sky-600";
+    case "green":
+      return "bg-gradient-to-tr from-emerald-500 to-85% to-emerald-600";
+  }
+};
+---
+
+<section id={href} class={`flex flex-col ${getBgColor(bgColor)}`}>
+  <div class="flex-1 mx-auto w-full noise">
+    <main class="container mx-auto">
+      <slot />
+    </main>
+  </div>
+</section>
