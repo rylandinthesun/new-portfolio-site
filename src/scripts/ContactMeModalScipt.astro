@@ -14,16 +14,27 @@
   let contactButton = document.querySelectorAll("#contact-btn");
   let cancelButtons = document.querySelectorAll("#cancel-contact");
 
+  function closeAndRestModal() {
+    dialog.close();
+    nameInput.value = "";
+    emailInput.value = "";
+    messageInput.value = "";
+  }
+
   cancelButtons?.forEach((button) => {
     button.addEventListener("click", (e) => {
       // close dialog element
       e.preventDefault();
       // set all input values to empty
-      nameInput.value = "";
-      emailInput.value = "";
-      messageInput.value = "";
-      dialog?.close();
+      closeAndRestModal();
     });
+  });
+
+  // click outside dialog to close
+  dialog?.addEventListener("click", (e) => {
+    if (e.target === dialog && dialog.open) {
+      closeAndRestModal();
+    }
   });
 
   contactButton?.forEach((button) => {
@@ -31,5 +42,14 @@
       e.preventDefault();
       dialog?.showModal();
     });
+  });
+
+  // on first page load show dialog
+  window.addEventListener("load", () => {
+    if (!dialog.open) {
+      setTimeout(() => {
+        dialog?.showModal();
+      }, 3000);
+    }
   });
 </script>
