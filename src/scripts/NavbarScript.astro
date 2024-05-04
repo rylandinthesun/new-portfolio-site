@@ -9,14 +9,25 @@
   const mobileNavMenuIcon = document.querySelector(".mobile-nav-menu-icon");
   const mobileNavCloseIcon = document.querySelector(".mobile-nav-close-icon");
 
-  function closeMobileNavMenu() {
-    if (!mobileNavMenu || !mobileNavMenuIcon || !mobileNavCloseIcon) return;
+  // show the navbar on scroll or if window width is less than 768px
+  window.addEventListener("scroll", () => {
+    const navbar = navBar?.parentElement;
+    if (!navbar) return;
 
-    mobileNavMenu.classList.toggle("-translate-y-[600px]");
-    mobileNavMenuIcon.classList.toggle("hidden");
-    mobileNavCloseIcon.classList.toggle("hidden");
-  }
+    if (window.scrollY > 60) {
+      if (navbar.classList.contains("sm:-translate-y-20")) {
+        navbar.classList.remove("sm:-translate-y-20");
+        navbar.classList.add("sm:translate-y-0");
+      }
+    } else {
+      if (navbar.classList.contains("sm:translate-y-0")) {
+        navbar.classList.remove("sm:translate-y-0");
+        navbar.classList.add("sm:-translate-y-20");
+      }
+    }
+  });
 
+  // show and hide name that is in the center of the navbar
   if (navBarCenter) {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 350) {
@@ -29,6 +40,14 @@
         navBarCenter.classList.add("opacity-0");
       }
     });
+  }
+
+  function closeMobileNavMenu() {
+    if (!mobileNavMenu || !mobileNavMenuIcon || !mobileNavCloseIcon) return;
+
+    mobileNavMenu.classList.toggle("-translate-y-[600px]");
+    mobileNavMenuIcon.classList.toggle("hidden");
+    mobileNavCloseIcon.classList.toggle("hidden");
   }
 
   if (mobileNavBtn && mobileNavMenu && navBar) {

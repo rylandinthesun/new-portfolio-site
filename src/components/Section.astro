@@ -20,7 +20,7 @@ const getBgColor = (color: string) => {
 
 <section id={href} class={`flex flex-col ${getBgColor(bgColor)}`}>
   <div class="flex-1 mx-auto w-full noise">
-    <main class="container mx-auto">
+    <main class="container mx-auto overflow-x-hidden">
       <slot />
     </main>
   </div>

@@ -60,23 +60,3 @@ const { title, description, noFooter = false } = Astro.props as Props;
     background-image: url("images/noise.png");
   }
 </style>
-
-<script>
-  // show the navbar on scroll or if window width is less than 768px
-  window.addEventListener("scroll", () => {
-    const navbar = document.querySelector(".nav");
-    if (!navbar) return;
-
-    if (window.scrollY > 60) {
-      if (navbar.classList.contains("sm:-translate-y-20")) {
-        navbar.classList.remove("sm:-translate-y-20");
-        navbar.classList.add("sm:translate-y-0");
-      }
-    } else {
-      if (navbar.classList.contains("sm:translate-y-0")) {
-        navbar.classList.remove("sm:translate-y-0");
-        navbar.classList.add("sm:-translate-y-20");
-      }
-    }
-  });
-</script>

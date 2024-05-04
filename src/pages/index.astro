@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Section from "../components/Section.astro";
-import ToolkitSection from "../components/ToolkitSection.astro";
+import HeroSection from "../components/HeroSection.astro";
 import AboutSection from "../components/AboutSection.astro";
-import ResumeSection from "../components/ResumeSection.astro";
+import ToolkitSection from "../components/ToolkitSection.astro";
 import ProjectsSection from "../components/ProjectsSection.astro";
+import ResumeSection from "../components/ResumeSection.astro";
 import FooterSection from "../components/FooterSection.astro";
 import ThankYouModal from "../components/ThankYouModal.astro";
 import ShowThankYouModalScript from "../scripts/ShowThankYouModalScript.astro";
@@ -16,20 +17,7 @@ import ShowThankYouModalScript from "../scripts/ShowThankYouModalScript.astro";
 >
   <ThankYouModal />
   <Section href="/">
-    <div class="h-[90vh] w-full flex justify-center items-center px-2">
-      <div class="flex flex-col">
-        <h1
-          class="max-[280px]:text-4xl text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-mono font-black uppercase animate-in-right stagger text-emerald-600"
-        >
-          Ryland <br />Oehlers
-        </h1>
-        <p
-          class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-4 sm:mt-6 animate-in-right stagger px-2 text-sky-600 font-semibold uppercase tracking-wider"
-        >
-          Frontend Engineer & Musician
-        </p>
-      </div>
-    </div>
+    <HeroSection />
   </Section>
   <Section href="about" bgColor="green">
     <AboutSection />
