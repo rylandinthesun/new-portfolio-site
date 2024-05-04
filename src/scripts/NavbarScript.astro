@@ -1,0 +1,69 @@
+<script>
+  const body = document.querySelector("body");
+  const navBar = document.querySelector(".navbar");
+  const navBarCenter = document.querySelector(".navbar-center");
+  const mobileNavBtn = document.querySelector("#mobile-nav-btn");
+  const mobileNavMenu = document.querySelector(".mobile-nav-menu");
+  const mobileNavLinks = document.querySelectorAll(".mobile-nav-menu a");
+  const homeLink = document.querySelector(".home-link");
+  const mobileNavMenuIcon = document.querySelector(".mobile-nav-menu-icon");
+  const mobileNavCloseIcon = document.querySelector(".mobile-nav-close-icon");
+
+  function closeMobileNavMenu() {
+    if (!mobileNavMenu || !mobileNavMenuIcon || !mobileNavCloseIcon) return;
+
+    mobileNavMenu.classList.toggle("-translate-y-[600px]");
+    mobileNavMenuIcon.classList.toggle("hidden");
+    mobileNavCloseIcon.classList.toggle("hidden");
+  }
+
+  if (navBarCenter) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 350) {
+        if (navBarCenter.classList.contains("opacity-0")) {
+          navBarCenter.classList.remove("opacity-0");
+          navBarCenter.classList.add("opacity-100");
+        }
+      } else {
+        navBarCenter.classList.remove("opacity-100");
+        navBarCenter.classList.add("opacity-0");
+      }
+    });
+  }
+
+  if (mobileNavBtn && mobileNavMenu && navBar) {
+    mobileNavBtn.addEventListener("click", () => {
+      closeMobileNavMenu();
+    });
+
+    if (body) {
+      body.addEventListener("click", (e: any) => {
+        if (
+          !mobileNavMenu.contains(e.target) &&
+          !mobileNavBtn.contains(e.target) &&
+          !navBar.contains(e.target) &&
+          !mobileNavMenu.classList.contains("-translate-y-[600px]")
+        ) {
+          closeMobileNavMenu();
+        }
+      });
+    }
+
+    mobileNavLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        closeMobileNavMenu();
+      });
+    });
+
+    if (homeLink) {
+      homeLink.addEventListener("click", () => {
+        if (
+          !mobileNavMenu.classList.contains("-translate-y-[600px]") &&
+          mobileNavMenu
+        ) {
+          closeMobileNavMenu();
+        }
+      });
+    }
+  }
+</script>

@@ -1,0 +1,52 @@
+<script>
+  const options = {
+    rootMargin: "0px 0px -200px 0px"
+  };
+
+  /**
+   * Section: Generic reusable animations 🧃
+   */
+
+  const animateInLeft = document.querySelectorAll(".animate-in-left");
+  const animateInRight = document.querySelectorAll(".animate-in-right");
+  const animateInUp = document.querySelectorAll(".animate-in-up");
+
+  const observerAnimateInLeft = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show-animate-in-left");
+        observerAnimateInLeft.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  const observerAnimateInRight = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show-animate-in-right");
+        observerAnimateInRight.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  const observerAnimateInUp = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show-animate-in-up");
+        observerAnimateInUp.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  animateInLeft.forEach((element) => {
+    observerAnimateInLeft.observe(element);
+  });
+
+  animateInRight.forEach((element) => {
+    observerAnimateInRight.observe(element);
+  });
+
+  animateInUp.forEach((element) => {
+    observerAnimateInUp.observe(element);
+  });
+</script>

@@ -1,0 +1,35 @@
+<script>
+  let dialog = document.querySelector(
+    "#contact-form-modal"
+  ) as HTMLDialogElement;
+  let nameInput = document.querySelector(
+    "input[name='name']"
+  ) as HTMLInputElement;
+  let emailInput = document.querySelector(
+    "input[name='email']"
+  ) as HTMLInputElement;
+  let messageInput = document.querySelector(
+    "textarea[name='message']"
+  ) as HTMLTextAreaElement;
+  let contactButton = document.querySelectorAll("#contact-btn");
+  let cancelButtons = document.querySelectorAll("#cancel-contact");
+
+  cancelButtons?.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      // close dialog element
+      e.preventDefault();
+      // set all input values to empty
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
+      dialog?.close();
+    });
+  });
+
+  contactButton?.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      dialog?.showModal();
+    });
+  });
+</script>
