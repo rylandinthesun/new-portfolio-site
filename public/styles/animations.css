@@ -2,7 +2,7 @@
   will-change: opacity, transform, filter;
   opacity: 0;
   filter: blur(10px);
-  transform: translateX(-50px);
+  transform: translateX(-25px);
   transition: all 350ms;
 }
 
@@ -10,7 +10,7 @@
   will-change: opacity, transform, filter;
   opacity: 0;
   filter: blur(10px);
-  transform: translateX(50px);
+  transform: translateX(25px);
   transition: all 350ms;
 }
 
@@ -18,7 +18,7 @@
   will-change: opacity, transform, filter;
   opacity: 0;
   filter: blur(10px);
-  transform: translateY(75px);
+  transform: translateY(25px);
   transition: all 350ms;
 }
 
