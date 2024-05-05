@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import Navbar from "../components/Navbar.astro";
 import AnimationObserverScript from "../scripts/AnimationObserverScript.astro";
 
@@ -48,15 +49,9 @@ const { title, description, noFooter = false } = Astro.props as Props;
     <meta name="twitter:image" content="/public/meta-headshot.png" />
   </head>
 
-  <body class="relative">
+  <body>
     <Navbar />
     <slot />
   </body>
   <AnimationObserverScript />
 </html>
-
-<style>
-  .noise {
-    background-image: url("images/noise.png");
-  }
-</style>
