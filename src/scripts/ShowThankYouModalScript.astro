@@ -1,5 +1,5 @@
 <script>
-  // if query param "contacted=success" is present, show thank you dialog
+  // if query param "contact==="sent" is present, show thank you dialog
   const urlParams = new URLSearchParams(window.location.search);
   const thankYou = urlParams.get("contact") === "sent";
   const dialog = document.getElementById(
