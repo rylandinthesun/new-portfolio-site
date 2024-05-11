@@ -1,15 +1,20 @@
 ---
-import Image from "astro/components/Image.astro";
 import Navbar from "../components/Navbar.astro";
 import AnimationObserverScript from "../scripts/AnimationObserverScript.astro";
+import favIcon from "../images/favicons/favicon.ico";
+import favIcon16 from "../images/favicons/favicon-16x16.png";
+import favIcon32 from "../images/favicons/favicon-32x32.png";
+import androidIcon192 from "../images/favicons/android-chrome-192x192.png";
+import androidIcon512 from "../images/favicons/android-chrome-512x512.png";
+import appTouchIcon from "../images/favicons/apple-touch-icon.png";
+import headshot from "../images/headshot.png";
 
 export interface Props {
   title: string;
   description: string;
-  noFooter?: boolean;
 }
 
-const { title, description, noFooter = false } = Astro.props as Props;
+const { title, description } = Astro.props as Props;
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -17,18 +22,29 @@ const { title, description, noFooter = false } = Astro.props as Props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="/styles/animations.css" type="text/css" rel="stylesheet" />
-    <link rel="icon" href="/public/favicon.png" />
+    <link rel="icon" type="image/x-icon" href={favIcon} />
+    <link rel="icon" type="image/png" sizes="32x32" href={favIcon32.src} />
+    <link rel="icon" type="image/png" sizes="16x16" href={favIcon16.src} />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/public/apple-touch-icon.png"
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href={androidIcon192.src}
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href={androidIcon512.src}
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href={appTouchIcon.src} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="canonical" href={Astro.url} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -36,8 +52,8 @@ const { title, description, noFooter = false } = Astro.props as Props;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="company" />
-    <meta property="og:image" content="/public/meta-headshot.png" />
-    <meta property="og:image:secure_url" content="/public/meta-headshot.png" />
+    <meta property="og:image" content={headshot.src} />
+    <meta property="og:image:secure_url" content={headshot.src} />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
@@ -46,7 +62,7 @@ const { title, description, noFooter = false } = Astro.props as Props;
     <meta name="twitter:creator" content="@simplyagree" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="/public/meta-headshot.png" />
+    <meta name="twitter:image" content={headshot.src} />
   </head>
 
   <body>
