@@ -1,0 +1,92 @@
+---
+import { Image } from "astro:assets";
+
+export interface Props {
+  imgSrc: ImageMetadata;
+  title: string;
+  description: string;
+  repoLink?: string;
+  siteLink?: string;
+  notMaintained?: boolean;
+  inProgress?: boolean;
+}
+
+const {
+  imgSrc,
+  title,
+  description,
+  repoLink,
+  siteLink,
+  notMaintained,
+  inProgress
+} = Astro.props as Props;
+---
+
+<div
+  class="card w-96 bg-base-100 shadow-lg border-4 border-slate-800 rounded-lg animate-in-up stagger"
+>
+  <figure class="rounded-t">
+    <Image
+      src={imgSrc}
+      alt={title + " project screenshot"}
+      width={1200}
+      height={800}
+      class="aspect-[3/2] object-cover bg-stone-300 border-b-2 border-slate-800"
+      quality="high"
+    />
+  </figure>
+  <div class="card-body bg-stone-50 rounded-b">
+    <h2 class="card-title font-mono text-emerald-600 text-xl">
+      {title}
+    </h2>
+    <p class="uppercase font-medium">
+      {description}
+    </p>
+    <div class="card-actions justify-end mt-3">
+      {
+        repoLink && (
+          <a href={repoLink} target="_blank" rel="noopener noreferrer">
+            <button
+              class="px-5 py-1.5 text-xl border-2 border-emerald-600 bg-emerald-600 rounded-lg text-stone-50 hover:bg-emerald-700 uppercase"
+              type="submit"
+            >
+              Repo
+            </button>
+          </a>
+        )
+      }
+      {
+        siteLink && (
+          <a href={siteLink} target="_blank" rel="noopener noreferrer">
+            <button
+              class="px-5 py-1.5 text-xl border-2 border-sky-600 bg-sky-600 rounded-lg text-stone-50 hover:bg-sky-700 uppercase"
+              type="submit"
+            >
+              Site
+            </button>
+          </a>
+        )
+      }
+      {
+        notMaintained && (
+          <button
+            class="px-5 py-1.5 text-xl border-2 border-sky-600 bg-sky-600 rounded-lg text-stone-50 uppercase cursor-default opacity-50"
+            disabled
+          >
+            Unmaintained
+          </button>
+        )
+      }
+      {
+        inProgress && (
+          <button
+            class="px-5 py-1.5 text-xl border-2 border-slate-800 rounded-lg text-slate-800 bg-stone-100 uppercase cursor-default opacity-50"
+            disabled
+          >
+            In Progress
+          </button>
+        )
+      }
+    </div>
+  </div>
+</div>

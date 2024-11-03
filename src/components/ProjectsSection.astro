@@ -1,12 +1,46 @@
-<div class="flex flex-col items-center justify-center h-[45vh]">
-  <h2
-    class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-mono font-black uppercase text-slate-800"
-  >
-    Projects
-  </h2>
-  <div
-    class="mt-4 sm:mt-6 flex items-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold uppercase tracking-wider space-x-2"
-  >
-    <p class="text-emerald-600">Coming soon...</p>
+---
+import ProjectCard from "./ProjectCard.astro";
+import windows98QuotesImg from "../images/projects/windows-98-quotes.png";
+import dreamSynthImg from "../images/projects/dream-synth.png";
+import cinePhileImg from "../images/projects/cinephile.png";
+import albumBoardImg from "../images/projects/album-board.png";
+import portfolioSiteImg from "../images/projects/portfolio-site.png";
+---
+
+<div class="h-full my-28 flex flex-col items-center justify-center">
+  <div class="flex items-center flex-wrap justify-center gap-6">
+    <ProjectCard
+      imgSrc={albumBoardImg}
+      title="Album Board"
+      description="A music album task management app built with Remix, SupaBase & Tailwind CSS."
+      inProgress
+    />
+    <ProjectCard
+      imgSrc={cinePhileImg}
+      title="CinePhile"
+      description="A movie search app built with Next, Firebase & Tailwind CSS."
+      repoLink="https://github.com/rylandinthesun/cinephile"
+      notMaintained
+    />
+    <ProjectCard
+      imgSrc={portfolioSiteImg}
+      title="Portfolio Site"
+      description="My personal portfolio site built with Astro & Tailwind CSS."
+      repoLink="https://github.com/rylandinthesun/new-portfolio-site"
+    />
+    <ProjectCard
+      imgSrc={windows98QuotesImg}
+      title="Windows 98 Quotes"
+      description="Inspirational quotes in the style of the Windows 98 era. Built with Remix."
+      repoLink="https://github.com/rylandinthesun/remix-98-quotes"
+      siteLink="https://remix-98-quotes.vercel.app/"
+    />
+    <ProjectCard
+      imgSrc={dreamSynthImg}
+      title="Dream Synth"
+      description="A simple synthesizer built with Next.js & Tone.js."
+      repoLink="https://github.com/rylandinthesun/nextjs-dream-synth"
+      siteLink="https://nextjs-dream-synth.vercel.app/"
+    />
   </div>
 </div>
