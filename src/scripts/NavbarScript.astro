@@ -46,7 +46,7 @@
   function closeMobileNavMenu() {
     if (!mobileNavMenu || !mobileNavMenuIcon || !mobileNavCloseIcon) return;
 
-    mobileNavMenu.classList.toggle("-translate-y-[600px]");
+    mobileNavMenu.classList.toggle("-translate-y-[625px]");
     mobileNavMenuIcon.classList.toggle("hidden");
     mobileNavCloseIcon.classList.toggle("hidden");
   }
@@ -62,7 +62,7 @@
           !mobileNavMenu.contains(e.target) &&
           !mobileNavBtn.contains(e.target) &&
           !navBar.contains(e.target) &&
-          !mobileNavMenu.classList.contains("-translate-y-[600px]")
+          !mobileNavMenu.classList.contains("-translate-y-[625px]")
         ) {
           closeMobileNavMenu();
         }
@@ -78,7 +78,7 @@
     if (homeLink) {
       homeLink.addEventListener("click", () => {
         if (
-          !mobileNavMenu.classList.contains("-translate-y-[600px]") &&
+          !mobileNavMenu.classList.contains("-translate-y-[625px]") &&
           mobileNavMenu
         ) {
           closeMobileNavMenu();
