@@ -1,7 +1,10 @@
 {
   "name": "ryland-oehlers-personal-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2.0.0",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
