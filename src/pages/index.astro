@@ -7,15 +7,12 @@ import ToolkitSection from "../components/ToolkitSection.astro";
 import ProjectsSection from "../components/ProjectsSection.astro";
 import ResumeSection from "../components/ResumeSection.astro";
 import FooterSection from "../components/FooterSection.astro";
-import ThankYouModal from "../components/ThankYouModal.astro";
-import ShowThankYouModalScript from "../scripts/ShowThankYouModalScript.astro";
 ---
 
 <Layout
   title="Ryland Oehlers | Frontend Engineer & Musician"
   description="Hi, I'm Ryland Oehlers. I'm a former professional musician turned frontend engineer. I'm passionate about building accessible, performant, and delightful web applications and experiences."
 >
-  <ThankYouModal />
   <Section href="/">
     <HeroSection />
   </Section>
@@ -35,5 +32,3 @@ import ShowThankYouModalScript from "../scripts/ShowThankYouModalScript.astro";
     <FooterSection />
   </Section>
 </Layout>
-
-<ShowThankYouModalScript />
