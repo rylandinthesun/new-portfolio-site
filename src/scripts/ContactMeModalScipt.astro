@@ -2,26 +2,16 @@
   let dialog = document.querySelector(
     "#contact-form-modal"
   ) as HTMLDialogElement;
-  let nameInput = document.querySelector(
-    "input[name='name']"
-  ) as HTMLInputElement;
-  let emailInput = document.querySelector(
-    "input[name='email']"
-  ) as HTMLInputElement;
-  let messageInput = document.querySelector(
-    "textarea[name='message']"
-  ) as HTMLTextAreaElement;
   let contactButton = document.querySelectorAll("#contact-btn");
   let cancelButtons = document.querySelectorAll("#cancel-contact");
+  let mailtoLink = document.querySelector(
+    '#contact-form-modal a[href^="mailto:"]'
+  ) as HTMLAnchorElement | null;
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const thankYou = urlParams.get("contact") === "sent";
+  // Removed ThankYouModal and URL param-based behavior
 
   function closeAndRestModal() {
     dialog.close();
-    nameInput.value = "";
-    emailInput.value = "";
-    messageInput.value = "";
   }
 
   cancelButtons?.forEach((button) => {
@@ -47,12 +37,9 @@
     });
   });
 
-  // on first page load show dialog
-  window.addEventListener("load", () => {
-    if (!dialog.open && !thankYou) {
-      setTimeout(() => {
-        dialog?.showModal();
-      }, 10000);
-    }
+  // Close the modal when user clicks the mailto button
+  mailtoLink?.addEventListener("click", () => {
+    // Let the browser handle opening the mail client, but close the modal immediately
+    closeAndRestModal();
   });
 </script>
